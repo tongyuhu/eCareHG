@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D5AD0CB1BB3E8120078BCD6 /* FamilyArchivesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0B91BB3E8120078BCD6 /* FamilyArchivesViewController.m */; };
+		2D5AD0CC1BB3E8120078BCD6 /* IdentityCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BB1BB3E8120078BCD6 /* IdentityCardViewController.m */; };
+		2D5AD0CD1BB3E8120078BCD6 /* IdentityCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BC1BB3E8120078BCD6 /* IdentityCardViewController.xib */; };
+		2D5AD0CE1BB3E8120078BCD6 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BE1BB3E8120078BCD6 /* SettingViewController.m */; };
+		2D5AD0CF1BB3E8120078BCD6 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BF1BB3E8120078BCD6 /* SettingViewController.xib */; };
+		2D5AD0D01BB3E8120078BCD6 /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0C11BB3E8120078BCD6 /* SignViewController.m */; };
+		2D5AD0D11BB3E8120078BCD6 /* SignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0C21BB3E8120078BCD6 /* SignViewController.xib */; };
+		2D5AD0D21BB3E8120078BCD6 /* UserCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0C41BB3E8120078BCD6 /* UserCenterController.m */; };
+		2D5AD0D31BB3E8120078BCD6 /* UserCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0C61BB3E8120078BCD6 /* UserCenterView.m */; };
+		2D5AD0D41BB3E8120078BCD6 /* UserCenterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0C71BB3E8120078BCD6 /* UserCenterView.xib */; };
+		2D5AD0D51BB3E8120078BCD6 /* UserInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0C91BB3E8120078BCD6 /* UserInformationViewController.m */; };
+		2D5AD0D61BB3E8120078BCD6 /* UserInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0CA1BB3E8120078BCD6 /* UserInformationViewController.xib */; };
 		8655B14B1BAFC80500FE2A96 /* NSDate+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 8655B1351BAFC80500FE2A96 /* NSDate+Convenience.m */; };
 		8655B14C1BAFC80500FE2A96 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8655B1371BAFC80500FE2A96 /* NSDateAdditions.m */; };
 		8655B14D1BAFC80500FE2A96 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8655B1391BAFC80500FE2A96 /* UIViewAdditions.m */; };
@@ -173,6 +185,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D5AD0B81BB3E8120078BCD6 /* FamilyArchivesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyArchivesViewController.h; sourceTree = "<group>"; };
+		2D5AD0B91BB3E8120078BCD6 /* FamilyArchivesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyArchivesViewController.m; sourceTree = "<group>"; };
+		2D5AD0BA1BB3E8120078BCD6 /* IdentityCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentityCardViewController.h; sourceTree = "<group>"; };
+		2D5AD0BB1BB3E8120078BCD6 /* IdentityCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentityCardViewController.m; sourceTree = "<group>"; };
+		2D5AD0BC1BB3E8120078BCD6 /* IdentityCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdentityCardViewController.xib; sourceTree = "<group>"; };
+		2D5AD0BD1BB3E8120078BCD6 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		2D5AD0BE1BB3E8120078BCD6 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		2D5AD0BF1BB3E8120078BCD6 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		2D5AD0C01BB3E8120078BCD6 /* SignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignViewController.h; sourceTree = "<group>"; };
+		2D5AD0C11BB3E8120078BCD6 /* SignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignViewController.m; sourceTree = "<group>"; };
+		2D5AD0C21BB3E8120078BCD6 /* SignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignViewController.xib; sourceTree = "<group>"; };
+		2D5AD0C31BB3E8120078BCD6 /* UserCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterController.h; sourceTree = "<group>"; };
+		2D5AD0C41BB3E8120078BCD6 /* UserCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterController.m; sourceTree = "<group>"; };
+		2D5AD0C51BB3E8120078BCD6 /* UserCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterView.h; sourceTree = "<group>"; };
+		2D5AD0C61BB3E8120078BCD6 /* UserCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterView.m; sourceTree = "<group>"; };
+		2D5AD0C71BB3E8120078BCD6 /* UserCenterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCenterView.xib; sourceTree = "<group>"; };
+		2D5AD0C81BB3E8120078BCD6 /* UserInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInformationViewController.h; sourceTree = "<group>"; };
+		2D5AD0C91BB3E8120078BCD6 /* UserInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformationViewController.m; sourceTree = "<group>"; };
+		2D5AD0CA1BB3E8120078BCD6 /* UserInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInformationViewController.xib; sourceTree = "<group>"; };
 		8655B1331BAFC80500FE2A96 /* NSDate+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Convenience.h"; sourceTree = "<group>"; };
 		8655B1341BAFC80500FE2A96 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8655B1351BAFC80500FE2A96 /* NSDate+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Convenience.m"; sourceTree = "<group>"; };
@@ -402,6 +433,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D5AD0B71BB3E8120078BCD6 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				2D5AD0B81BB3E8120078BCD6 /* FamilyArchivesViewController.h */,
+				2D5AD0B91BB3E8120078BCD6 /* FamilyArchivesViewController.m */,
+				2D5AD0BA1BB3E8120078BCD6 /* IdentityCardViewController.h */,
+				2D5AD0BB1BB3E8120078BCD6 /* IdentityCardViewController.m */,
+				2D5AD0BC1BB3E8120078BCD6 /* IdentityCardViewController.xib */,
+				2D5AD0BD1BB3E8120078BCD6 /* SettingViewController.h */,
+				2D5AD0BE1BB3E8120078BCD6 /* SettingViewController.m */,
+				2D5AD0BF1BB3E8120078BCD6 /* SettingViewController.xib */,
+				2D5AD0C01BB3E8120078BCD6 /* SignViewController.h */,
+				2D5AD0C11BB3E8120078BCD6 /* SignViewController.m */,
+				2D5AD0C21BB3E8120078BCD6 /* SignViewController.xib */,
+				2D5AD0C31BB3E8120078BCD6 /* UserCenterController.h */,
+				2D5AD0C41BB3E8120078BCD6 /* UserCenterController.m */,
+				2D5AD0C51BB3E8120078BCD6 /* UserCenterView.h */,
+				2D5AD0C61BB3E8120078BCD6 /* UserCenterView.m */,
+				2D5AD0C71BB3E8120078BCD6 /* UserCenterView.xib */,
+				2D5AD0C81BB3E8120078BCD6 /* UserInformationViewController.h */,
+				2D5AD0C91BB3E8120078BCD6 /* UserInformationViewController.m */,
+				2D5AD0CA1BB3E8120078BCD6 /* UserInformationViewController.xib */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
 		8655B1321BAFC7FB00FE2A96 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +632,7 @@
 		867121601BA9481300D94CF1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2D5AD0B71BB3E8120078BCD6 /* UserCenter */,
 				867123291BA94E8A00D94CF1 /* HomePageViewController.h */,
 				8671232A1BA94E8A00D94CF1 /* HomePageViewController.m */,
 				8671232B1BA94E8A00D94CF1 /* HomePageViewController.xib */,
@@ -875,6 +933,7 @@
 				867121FA1BA9483800D94CF1 /* order_form.png in Resources */,
 				867121E71BA9483800D94CF1 /* gray_bnt.png in Resources */,
 				867121CD1BA9483800D94CF1 /* ask_icon.png in Resources */,
+				2D5AD0D41BB3E8120078BCD6 /* UserCenterView.xib in Resources */,
 				867122111BA9483800D94CF1 /* touxiangmoren.png in Resources */,
 				8671220C1BA9483800D94CF1 /* staus_selected_icon.png in Resources */,
 				8688A40E1BABD9E800F38B55 /* QuickOrderViewController.xib in Resources */,
@@ -901,6 +960,7 @@
 				865B64701BB247C90030A075 /* ServiceTimeCustomView.xib in Resources */,
 				867123411BA95B4D00D94CF1 /* AddServiceObjectMesVC.xib in Resources */,
 				867121DF1BA9483800D94CF1 /* current_day_bg.png in Resources */,
+				2D5AD0D11BB3E8120078BCD6 /* SignViewController.xib in Resources */,
 				867122021BA9483800D94CF1 /* popup.png in Resources */,
 				8671221B1BA9483800D94CF1 /* yuanquan.png in Resources */,
 				867121D11BA9483800D94CF1 /* bank_card.png in Resources */,
@@ -910,6 +970,7 @@
 				867121FF1BA9483800D94CF1 /* password.png in Resources */,
 				867122011BA9483800D94CF1 /* phone_icon.png in Resources */,
 				8671232D1BA94E8A00D94CF1 /* HomePageViewController.xib in Resources */,
+				2D5AD0CF1BB3E8120078BCD6 /* SettingViewController.xib in Resources */,
 				8671212E1BA945C400D94CF1 /* LaunchScreen.xib in Resources */,
 				867122131BA9483800D94CF1 /* usertouxiang.png in Resources */,
 				867121C81BA9483800D94CF1 /* adressjiantou_idon.png in Resources */,
@@ -945,9 +1006,11 @@
 				867121CC1BA9483800D94CF1 /* arrows_top_icon.png in Resources */,
 				867121EF1BA9483800D94CF1 /* jiahao.png in Resources */,
 				867122091BA9483800D94CF1 /* righticon.png in Resources */,
+				2D5AD0D61BB3E8120078BCD6 /* UserInformationViewController.xib in Resources */,
 				867121D71BA9483800D94CF1 /* btn_main_bg.png in Resources */,
 				8671216B1BA9481300D94CF1 /* HomeCareViewController.xib in Resources */,
 				867122191BA9483800D94CF1 /* yonghu.png in Resources */,
+				2D5AD0CD1BB3E8120078BCD6 /* IdentityCardViewController.xib in Resources */,
 				867121D61BA9483800D94CF1 /* blue_loading.png in Resources */,
 				867122001BA9483800D94CF1 /* phone.png in Resources */,
 				8671220B1BA9483800D94CF1 /* staus_false_icon.png in Resources */,
@@ -977,6 +1040,8 @@
 				867123601BA9686400D94CF1 /* UIView+Hierarchy.m in Sources */,
 				8655B1541BAFC80500FE2A96 /* KalViewController.m in Sources */,
 				8655B15D1BAFCC6400FE2A96 /* EventKitDataSource.m in Sources */,
+				2D5AD0D21BB3E8120078BCD6 /* UserCenterController.m in Sources */,
+				2D5AD0D01BB3E8120078BCD6 /* SignViewController.m in Sources */,
 				8655B1521BAFC80500FE2A96 /* KalTileView.m in Sources */,
 				8671235D1BA9686400D94CF1 /* IQTitleBarButtonItem.m in Sources */,
 				8655B1511BAFC80500FE2A96 /* KalMonthView.m in Sources */,
@@ -993,16 +1058,19 @@
 				8671216A1BA9481300D94CF1 /* HomeCareViewController.m in Sources */,
 				8655B1501BAFC80500FE2A96 /* KalLogic.m in Sources */,
 				867121231BA945C400D94CF1 /* AppDelegate.m in Sources */,
+				2D5AD0CC1BB3E8120078BCD6 /* IdentityCardViewController.m in Sources */,
 				8655B14F1BAFC80500FE2A96 /* KalGridView.m in Sources */,
 				8671232C1BA94E8A00D94CF1 /* HomePageViewController.m in Sources */,
 				8655B14B1BAFC80500FE2A96 /* NSDate+Convenience.m in Sources */,
 				865F2CC61BAA651200D7A1E2 /* MyTools.m in Sources */,
+				2D5AD0D51BB3E8120078BCD6 /* UserInformationViewController.m in Sources */,
 				8671235E1BA9686400D94CF1 /* IQToolbar.m in Sources */,
 				867121201BA945C400D94CF1 /* main.m in Sources */,
 				865F2CD01BAA76DA00D7A1E2 /* MBProgressHUD.m in Sources */,
 				8688A41D1BABE9AD00F38B55 /* UIColorAdditions.m in Sources */,
 				8688A4171BABE14500F38B55 /* OrderNurseCell.m in Sources */,
 				8655B1661BAFDCA700FE2A96 /* ReserveOrderViewController.m in Sources */,
+				2D5AD0D31BB3E8120078BCD6 /* UserCenterView.m in Sources */,
 				865F2CCA1BAA67F100D7A1E2 /* ServiceObjectMessage.m in Sources */,
 				8655B1531BAFC80500FE2A96 /* KalView.m in Sources */,
 				8671233B1BA9561B00D94CF1 /* ServiceObjectMesCell.m in Sources */,
@@ -1017,8 +1085,10 @@
 				867123611BA9686400D94CF1 /* UIView+IQKeyboardToolbar.m in Sources */,
 				8671235B1BA9686400D94CF1 /* IQSegmentedNextPrevious.m in Sources */,
 				8655B14D1BAFC80500FE2A96 /* UIViewAdditions.m in Sources */,
+				2D5AD0CB1BB3E8120078BCD6 /* FamilyArchivesViewController.m in Sources */,
 				867123621BA9686400D94CF1 /* UIWindow+Hierarchy.m in Sources */,
 				866514251BB3A870004D4FE1 /* FamilyMemberMesObject.m in Sources */,
+				2D5AD0CE1BB3E8120078BCD6 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1145,7 +1215,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PREFIX_HEADER = "/Users/jinyanfeng/Desktop/个人资料/eCareHG 2/eCareHG/Libs/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/tongyuhu/Documents/eCareHG/eCareHG/Libs/PrefixHeader.pch;
 				INFOPLIST_FILE = eCareHG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1158,7 +1228,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PREFIX_HEADER = "/Users/jinyanfeng/Desktop/个人资料/eCareHG 2/eCareHG/Libs/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = /Users/tongyuhu/Documents/eCareHG/eCareHG/Libs/PrefixHeader.pch;
 				INFOPLIST_FILE = eCareHG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
