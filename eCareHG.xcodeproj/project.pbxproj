@@ -19,6 +19,12 @@
 		2D5AD0D41BB3E8120078BCD6 /* UserCenterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0C71BB3E8120078BCD6 /* UserCenterView.xib */; };
 		2D5AD0D51BB3E8120078BCD6 /* UserInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0C91BB3E8120078BCD6 /* UserInformationViewController.m */; };
 		2D5AD0D61BB3E8120078BCD6 /* UserInformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0CA1BB3E8120078BCD6 /* UserInformationViewController.xib */; };
+		2D5AD0DE1BB3F6A50078BCD6 /* OrderNurseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0D91BB3F6A50078BCD6 /* OrderNurseCell.m */; };
+		2D5AD0DF1BB3F6A50078BCD6 /* OrderNurseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0DA1BB3F6A50078BCD6 /* OrderNurseCell.xib */; };
+		2D5AD0E01BB3F6A50078BCD6 /* ServiceObjectMesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0DC1BB3F6A50078BCD6 /* ServiceObjectMesCell.m */; };
+		2D5AD0E11BB3F6A50078BCD6 /* ServiceObjectMesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0DD1BB3F6A50078BCD6 /* ServiceObjectMesCell.xib */; };
+		2D5AD0E61BB3FA340078BCD6 /* FamilyMemberMesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0E41BB3FA340078BCD6 /* FamilyMemberMesCell.m */; };
+		2D5AD0E71BB3FA340078BCD6 /* FamilyMemberMesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0E51BB3FA340078BCD6 /* FamilyMemberMesCell.xib */; };
 		8655B14B1BAFC80500FE2A96 /* NSDate+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 8655B1351BAFC80500FE2A96 /* NSDate+Convenience.m */; };
 		8655B14C1BAFC80500FE2A96 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8655B1371BAFC80500FE2A96 /* NSDateAdditions.m */; };
 		8655B14D1BAFC80500FE2A96 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8655B1391BAFC80500FE2A96 /* UIViewAdditions.m */; };
@@ -45,8 +51,6 @@
 		865F2CD01BAA76DA00D7A1E2 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 865F2CCF1BAA76DA00D7A1E2 /* MBProgressHUD.m */; };
 		866514121BB38B16004D4FE1 /* FamilyMemberMesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866514101BB38B16004D4FE1 /* FamilyMemberMesViewController.m */; };
 		866514131BB38B16004D4FE1 /* FamilyMemberMesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 866514111BB38B16004D4FE1 /* FamilyMemberMesViewController.xib */; };
-		866514211BB38F00004D4FE1 /* FamilyMemberMesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8665141F1BB38F00004D4FE1 /* FamilyMemberMesCell.m */; };
-		866514221BB38F00004D4FE1 /* FamilyMemberMesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 866514201BB38F00004D4FE1 /* FamilyMemberMesCell.xib */; };
 		866514251BB3A870004D4FE1 /* FamilyMemberMesObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 866514241BB3A870004D4FE1 /* FamilyMemberMesObject.m */; };
 		867121201BA945C400D94CF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8671211F1BA945C400D94CF1 /* main.m */; };
 		867121231BA945C400D94CF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 867121221BA945C400D94CF1 /* AppDelegate.m */; };
@@ -149,8 +153,6 @@
 		8671232C1BA94E8A00D94CF1 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8671232A1BA94E8A00D94CF1 /* HomePageViewController.m */; };
 		8671232D1BA94E8A00D94CF1 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671232B1BA94E8A00D94CF1 /* HomePageViewController.xib */; };
 		867123361BA9511D00D94CF1 /* ServiceObjectMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867123341BA9511D00D94CF1 /* ServiceObjectMessageVC.m */; };
-		8671233B1BA9561B00D94CF1 /* ServiceObjectMesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 867123391BA9561B00D94CF1 /* ServiceObjectMesCell.m */; };
-		8671233C1BA9561B00D94CF1 /* ServiceObjectMesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671233A1BA9561B00D94CF1 /* ServiceObjectMesCell.xib */; };
 		867123401BA95B4D00D94CF1 /* AddServiceObjectMesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8671233E1BA95B4D00D94CF1 /* AddServiceObjectMesVC.m */; };
 		867123411BA95B4D00D94CF1 /* AddServiceObjectMesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8671233F1BA95B4D00D94CF1 /* AddServiceObjectMesVC.xib */; };
 		867123591BA9686400D94CF1 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867123431BA9686400D94CF1 /* IQKeyboardManager.bundle */; };
@@ -168,8 +170,6 @@
 		867A4C2C1BB3C05B00F63A7B /* AddFamilyMemberMesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 867A4C2B1BB3C05B00F63A7B /* AddFamilyMemberMesVC.m */; };
 		8688A40D1BABD9E800F38B55 /* QuickOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8688A40B1BABD9E800F38B55 /* QuickOrderViewController.m */; };
 		8688A40E1BABD9E800F38B55 /* QuickOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8688A40C1BABD9E800F38B55 /* QuickOrderViewController.xib */; };
-		8688A4171BABE14500F38B55 /* OrderNurseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8688A4151BABE14500F38B55 /* OrderNurseCell.m */; };
-		8688A4181BABE14500F38B55 /* OrderNurseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8688A4161BABE14500F38B55 /* OrderNurseCell.xib */; };
 		8688A41D1BABE9AD00F38B55 /* UIColorAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8688A41C1BABE9AD00F38B55 /* UIColorAdditions.m */; };
 		8688A4201BAC082600F38B55 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8688A41F1BAC082600F38B55 /* Images-2.xcassets */; };
 /* End PBXBuildFile section */
@@ -204,6 +204,15 @@
 		2D5AD0C81BB3E8120078BCD6 /* UserInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInformationViewController.h; sourceTree = "<group>"; };
 		2D5AD0C91BB3E8120078BCD6 /* UserInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInformationViewController.m; sourceTree = "<group>"; };
 		2D5AD0CA1BB3E8120078BCD6 /* UserInformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInformationViewController.xib; sourceTree = "<group>"; };
+		2D5AD0D81BB3F6A50078BCD6 /* OrderNurseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderNurseCell.h; sourceTree = "<group>"; };
+		2D5AD0D91BB3F6A50078BCD6 /* OrderNurseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderNurseCell.m; sourceTree = "<group>"; };
+		2D5AD0DA1BB3F6A50078BCD6 /* OrderNurseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderNurseCell.xib; sourceTree = "<group>"; };
+		2D5AD0DB1BB3F6A50078BCD6 /* ServiceObjectMesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceObjectMesCell.h; sourceTree = "<group>"; };
+		2D5AD0DC1BB3F6A50078BCD6 /* ServiceObjectMesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceObjectMesCell.m; sourceTree = "<group>"; };
+		2D5AD0DD1BB3F6A50078BCD6 /* ServiceObjectMesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceObjectMesCell.xib; sourceTree = "<group>"; };
+		2D5AD0E31BB3FA340078BCD6 /* FamilyMemberMesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyMemberMesCell.h; sourceTree = "<group>"; };
+		2D5AD0E41BB3FA340078BCD6 /* FamilyMemberMesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyMemberMesCell.m; sourceTree = "<group>"; };
+		2D5AD0E51BB3FA340078BCD6 /* FamilyMemberMesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilyMemberMesCell.xib; sourceTree = "<group>"; };
 		8655B1331BAFC80500FE2A96 /* NSDate+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Convenience.h"; sourceTree = "<group>"; };
 		8655B1341BAFC80500FE2A96 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8655B1351BAFC80500FE2A96 /* NSDate+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Convenience.m"; sourceTree = "<group>"; };
@@ -253,9 +262,6 @@
 		8665140F1BB38B16004D4FE1 /* FamilyMemberMesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyMemberMesViewController.h; sourceTree = "<group>"; };
 		866514101BB38B16004D4FE1 /* FamilyMemberMesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyMemberMesViewController.m; sourceTree = "<group>"; };
 		866514111BB38B16004D4FE1 /* FamilyMemberMesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilyMemberMesViewController.xib; sourceTree = "<group>"; };
-		8665141E1BB38F00004D4FE1 /* FamilyMemberMesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FamilyMemberMesCell.h; path = ../FamilyMemberMesCell.h; sourceTree = "<group>"; };
-		8665141F1BB38F00004D4FE1 /* FamilyMemberMesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FamilyMemberMesCell.m; path = ../FamilyMemberMesCell.m; sourceTree = "<group>"; };
-		866514201BB38F00004D4FE1 /* FamilyMemberMesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FamilyMemberMesCell.xib; path = ../FamilyMemberMesCell.xib; sourceTree = "<group>"; };
 		866514231BB3A870004D4FE1 /* FamilyMemberMesObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyMemberMesObject.h; sourceTree = "<group>"; };
 		866514241BB3A870004D4FE1 /* FamilyMemberMesObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyMemberMesObject.m; sourceTree = "<group>"; };
 		8671211A1BA945C400D94CF1 /* eCareHG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eCareHG.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -371,9 +377,6 @@
 		8671232B1BA94E8A00D94CF1 /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		867123331BA9511D00D94CF1 /* ServiceObjectMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceObjectMessageVC.h; sourceTree = "<group>"; };
 		867123341BA9511D00D94CF1 /* ServiceObjectMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceObjectMessageVC.m; sourceTree = "<group>"; };
-		867123381BA9561B00D94CF1 /* ServiceObjectMesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceObjectMesCell.h; path = ../ServiceObjectMesCell.h; sourceTree = "<group>"; };
-		867123391BA9561B00D94CF1 /* ServiceObjectMesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceObjectMesCell.m; path = ../ServiceObjectMesCell.m; sourceTree = "<group>"; };
-		8671233A1BA9561B00D94CF1 /* ServiceObjectMesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ServiceObjectMesCell.xib; path = ../ServiceObjectMesCell.xib; sourceTree = "<group>"; };
 		8671233D1BA95B4D00D94CF1 /* AddServiceObjectMesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddServiceObjectMesVC.h; sourceTree = "<group>"; };
 		8671233E1BA95B4D00D94CF1 /* AddServiceObjectMesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddServiceObjectMesVC.m; sourceTree = "<group>"; };
 		8671233F1BA95B4D00D94CF1 /* AddServiceObjectMesVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddServiceObjectMesVC.xib; sourceTree = "<group>"; };
@@ -407,9 +410,6 @@
 		8688A40A1BABD9E800F38B55 /* QuickOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickOrderViewController.h; sourceTree = "<group>"; };
 		8688A40B1BABD9E800F38B55 /* QuickOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickOrderViewController.m; sourceTree = "<group>"; };
 		8688A40C1BABD9E800F38B55 /* QuickOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuickOrderViewController.xib; sourceTree = "<group>"; };
-		8688A4141BABE14500F38B55 /* OrderNurseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderNurseCell.h; path = ../OrderNurseCell.h; sourceTree = "<group>"; };
-		8688A4151BABE14500F38B55 /* OrderNurseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrderNurseCell.m; path = ../OrderNurseCell.m; sourceTree = "<group>"; };
-		8688A4161BABE14500F38B55 /* OrderNurseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OrderNurseCell.xib; path = ../OrderNurseCell.xib; sourceTree = "<group>"; };
 		8688A41B1BABE9AD00F38B55 /* UIColorAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorAdditions.h; sourceTree = "<group>"; };
 		8688A41C1BABE9AD00F38B55 /* UIColorAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorAdditions.m; sourceTree = "<group>"; };
 		8688A41F1BAC082600F38B55 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
@@ -459,6 +459,29 @@
 			path = UserCenter;
 			sourceTree = "<group>";
 		};
+		2D5AD0D71BB3F6A50078BCD6 /* HomeCareCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D5AD0D81BB3F6A50078BCD6 /* OrderNurseCell.h */,
+				2D5AD0D91BB3F6A50078BCD6 /* OrderNurseCell.m */,
+				2D5AD0DA1BB3F6A50078BCD6 /* OrderNurseCell.xib */,
+				2D5AD0DB1BB3F6A50078BCD6 /* ServiceObjectMesCell.h */,
+				2D5AD0DC1BB3F6A50078BCD6 /* ServiceObjectMesCell.m */,
+				2D5AD0DD1BB3F6A50078BCD6 /* ServiceObjectMesCell.xib */,
+			);
+			path = HomeCareCell;
+			sourceTree = "<group>";
+		};
+		2D5AD0E21BB3FA340078BCD6 /* HomeNurseCell */ = {
+			isa = PBXGroup;
+			children = (
+				2D5AD0E31BB3FA340078BCD6 /* FamilyMemberMesCell.h */,
+				2D5AD0E41BB3FA340078BCD6 /* FamilyMemberMesCell.m */,
+				2D5AD0E51BB3FA340078BCD6 /* FamilyMemberMesCell.xib */,
+			);
+			path = HomeNurseCell;
+			sourceTree = "<group>";
+		};
 		8655B1321BAFC7FB00FE2A96 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -490,29 +513,6 @@
 				8655B14A1BAFC80500FE2A96 /* Kal.bundle */,
 			);
 			path = Calendar;
-			sourceTree = "<group>";
-		};
-		865B64761BB2A0F00030A075 /* HomeCareCell */ = {
-			isa = PBXGroup;
-			children = (
-				867123381BA9561B00D94CF1 /* ServiceObjectMesCell.h */,
-				867123391BA9561B00D94CF1 /* ServiceObjectMesCell.m */,
-				8671233A1BA9561B00D94CF1 /* ServiceObjectMesCell.xib */,
-				8688A4141BABE14500F38B55 /* OrderNurseCell.h */,
-				8688A4151BABE14500F38B55 /* OrderNurseCell.m */,
-				8688A4161BABE14500F38B55 /* OrderNurseCell.xib */,
-			);
-			path = HomeCareCell;
-			sourceTree = "<group>";
-		};
-		865B64771BB2A1290030A075 /* HomeNurseCell */ = {
-			isa = PBXGroup;
-			children = (
-				8665141E1BB38F00004D4FE1 /* FamilyMemberMesCell.h */,
-				8665141F1BB38F00004D4FE1 /* FamilyMemberMesCell.m */,
-				866514201BB38F00004D4FE1 /* FamilyMemberMesCell.xib */,
-			);
-			path = HomeNurseCell;
 			sourceTree = "<group>";
 		};
 		865F2CC31BAA64FC00D7A1E2 /* CustomClass */ = {
@@ -632,10 +632,10 @@
 		867121601BA9481300D94CF1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2D5AD0B71BB3E8120078BCD6 /* UserCenter */,
 				867123291BA94E8A00D94CF1 /* HomePageViewController.h */,
 				8671232A1BA94E8A00D94CF1 /* HomePageViewController.m */,
 				8671232B1BA94E8A00D94CF1 /* HomePageViewController.xib */,
+				2D5AD0B71BB3E8120078BCD6 /* UserCenter */,
 				867121611BA9481300D94CF1 /* ChatRoom */,
 				867121621BA9481300D94CF1 /* HomeCare */,
 				8688A4191BABE96D00F38B55 /* HomeNurse */,
@@ -653,6 +653,7 @@
 		867121621BA9481300D94CF1 /* HomeCare */ = {
 			isa = PBXGroup;
 			children = (
+				2D5AD0D71BB3F6A50078BCD6 /* HomeCareCell */,
 				867121631BA9481300D94CF1 /* HomeCareViewController.h */,
 				867121641BA9481300D94CF1 /* HomeCareViewController.m */,
 				867121651BA9481300D94CF1 /* HomeCareViewController.xib */,
@@ -673,7 +674,6 @@
 				8655B1681BAFEE8300FE2A96 /* ServiceNurseDetailViewController.h */,
 				8655B1691BAFEE8300FE2A96 /* ServiceNurseDetailViewController.m */,
 				8655B16A1BAFEE8300FE2A96 /* ServiceNurseDetailViewController.xib */,
-				865B64761BB2A0F00030A075 /* HomeCareCell */,
 			);
 			path = HomeCare;
 			sourceTree = "<group>";
@@ -805,6 +805,7 @@
 		8688A4191BABE96D00F38B55 /* HomeNurse */ = {
 			isa = PBXGroup;
 			children = (
+				2D5AD0E21BB3FA340078BCD6 /* HomeNurseCell */,
 				865B64711BB2A0B00030A075 /* HomeNurseViewController.h */,
 				865B64721BB2A0B00030A075 /* HomeNurseViewController.m */,
 				865B64731BB2A0B00030A075 /* HomeNurseViewController.xib */,
@@ -814,7 +815,6 @@
 				867A4C2A1BB3C05B00F63A7B /* AddFamilyMemberMesVC.h */,
 				867A4C2B1BB3C05B00F63A7B /* AddFamilyMemberMesVC.m */,
 				867A4C281BB3C03C00F63A7B /* AddFamilyMemberMesVC.xib */,
-				865B64771BB2A1290030A075 /* HomeNurseCell */,
 			);
 			path = HomeNurse;
 			sourceTree = "<group>";
@@ -909,6 +909,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				867122101BA9483800D94CF1 /* touxiang.png in Resources */,
+				2D5AD0DF1BB3F6A50078BCD6 /* OrderNurseCell.xib in Resources */,
 				867121F11BA9483800D94CF1 /* lansejiantou.png in Resources */,
 				8671221A1BA9483800D94CF1 /* yonghu_icon.png in Resources */,
 				867121E81BA9483800D94CF1 /* green_bnt.png in Resources */,
@@ -944,11 +945,9 @@
 				8655B1551BAFC80500FE2A96 /* Kal.bundle in Resources */,
 				867121F71BA9483800D94CF1 /* map_searchicon.png in Resources */,
 				867121EA1BA9483800D94CF1 /* huisejiantou.png in Resources */,
-				8671233C1BA9561B00D94CF1 /* ServiceObjectMesCell.xib in Resources */,
 				867121F31BA9483800D94CF1 /* lightning_icon.png in Resources */,
 				867122171BA9483800D94CF1 /* xuanzhong.png in Resources */,
 				867122181BA9483800D94CF1 /* yinhangka_icon.png in Resources */,
-				8688A4181BABE14500F38B55 /* OrderNurseCell.xib in Resources */,
 				867121D01BA9483800D94CF1 /* balance.png in Resources */,
 				867121D81BA9483800D94CF1 /* cancel_bnt.png in Resources */,
 				867122141BA9483800D94CF1 /* weixin.png in Resources */,
@@ -964,6 +963,7 @@
 				867122021BA9483800D94CF1 /* popup.png in Resources */,
 				8671221B1BA9483800D94CF1 /* yuanquan.png in Resources */,
 				867121D11BA9483800D94CF1 /* bank_card.png in Resources */,
+				2D5AD0E71BB3FA340078BCD6 /* FamilyMemberMesCell.xib in Resources */,
 				867121E31BA9483800D94CF1 /* edit_icon.png in Resources */,
 				867121F61BA9483800D94CF1 /* login.png in Resources */,
 				867121CF1BA9483800D94CF1 /* back.png in Resources */,
@@ -996,7 +996,6 @@
 				867121E61BA9483800D94CF1 /* gray1.png in Resources */,
 				867121CA1BA9483800D94CF1 /* area_icon.png in Resources */,
 				867121D21BA9483800D94CF1 /* banner_bg.png in Resources */,
-				866514221BB38F00004D4FE1 /* FamilyMemberMesCell.xib in Resources */,
 				867121E21BA9483800D94CF1 /* ecare_bg.png in Resources */,
 				867121DB1BA9483800D94CF1 /* close_icon.png in Resources */,
 				867122061BA9483800D94CF1 /* qq.png in Resources */,
@@ -1011,6 +1010,7 @@
 				8671216B1BA9481300D94CF1 /* HomeCareViewController.xib in Resources */,
 				867122191BA9483800D94CF1 /* yonghu.png in Resources */,
 				2D5AD0CD1BB3E8120078BCD6 /* IdentityCardViewController.xib in Resources */,
+				2D5AD0E11BB3F6A50078BCD6 /* ServiceObjectMesCell.xib in Resources */,
 				867121D61BA9483800D94CF1 /* blue_loading.png in Resources */,
 				867122001BA9483800D94CF1 /* phone.png in Resources */,
 				8671220B1BA9483800D94CF1 /* staus_false_icon.png in Resources */,
@@ -1052,6 +1052,7 @@
 				8655B16B1BAFEE8300FE2A96 /* ServiceNurseDetailViewController.m in Sources */,
 				8688A40D1BABD9E800F38B55 /* QuickOrderViewController.m in Sources */,
 				867123401BA95B4D00D94CF1 /* AddServiceObjectMesVC.m in Sources */,
+				2D5AD0E61BB3FA340078BCD6 /* FamilyMemberMesCell.m in Sources */,
 				867121261BA945C400D94CF1 /* ViewController.m in Sources */,
 				8671214E1BA9478200D94CF1 /* BaseNavViewController.m in Sources */,
 				8671235F1BA9686400D94CF1 /* NSArray+Sort.m in Sources */,
@@ -1068,22 +1069,21 @@
 				867121201BA945C400D94CF1 /* main.m in Sources */,
 				865F2CD01BAA76DA00D7A1E2 /* MBProgressHUD.m in Sources */,
 				8688A41D1BABE9AD00F38B55 /* UIColorAdditions.m in Sources */,
-				8688A4171BABE14500F38B55 /* OrderNurseCell.m in Sources */,
 				8655B1661BAFDCA700FE2A96 /* ReserveOrderViewController.m in Sources */,
 				2D5AD0D31BB3E8120078BCD6 /* UserCenterView.m in Sources */,
 				865F2CCA1BAA67F100D7A1E2 /* ServiceObjectMessage.m in Sources */,
 				8655B1531BAFC80500FE2A96 /* KalView.m in Sources */,
-				8671233B1BA9561B00D94CF1 /* ServiceObjectMesCell.m in Sources */,
 				8655B14C1BAFC80500FE2A96 /* NSDateAdditions.m in Sources */,
 				8655B14E1BAFC80500FE2A96 /* KalDataSource.m in Sources */,
-				866514211BB38F00004D4FE1 /* FamilyMemberMesCell.m in Sources */,
 				86799A861BAA8BF400BD3D34 /* RoundBtn.m in Sources */,
 				867123361BA9511D00D94CF1 /* ServiceObjectMessageVC.m in Sources */,
 				866514121BB38B16004D4FE1 /* FamilyMemberMesViewController.m in Sources */,
 				8655B1611BAFDA5600FE2A96 /* ServiceTimeViewController.m in Sources */,
+				2D5AD0DE1BB3F6A50078BCD6 /* OrderNurseCell.m in Sources */,
 				867A4C2C1BB3C05B00F63A7B /* AddFamilyMemberMesVC.m in Sources */,
 				867123611BA9686400D94CF1 /* UIView+IQKeyboardToolbar.m in Sources */,
 				8671235B1BA9686400D94CF1 /* IQSegmentedNextPrevious.m in Sources */,
+				2D5AD0E01BB3F6A50078BCD6 /* ServiceObjectMesCell.m in Sources */,
 				8655B14D1BAFC80500FE2A96 /* UIViewAdditions.m in Sources */,
 				2D5AD0CB1BB3E8120078BCD6 /* FamilyArchivesViewController.m in Sources */,
 				867123621BA9686400D94CF1 /* UIWindow+Hierarchy.m in Sources */,
@@ -1215,7 +1215,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PREFIX_HEADER = /Users/tongyuhu/Documents/eCareHG/eCareHG/Libs/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = ../eCareHG/eCareHG/Libs/PrefixHeader.pch;
 				INFOPLIST_FILE = eCareHG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1228,7 +1228,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PREFIX_HEADER = /Users/tongyuhu/Documents/eCareHG/eCareHG/Libs/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = ../eCareHG/eCareHG/Libs/PrefixHeader.pch;
 				INFOPLIST_FILE = eCareHG/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -78,8 +78,15 @@
         //            _userView.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
         //        }];
         
+        CATransition* transition = [CATransition animation];
+        transition.type = kCATransitionPush;//可更改为其他方式
+        transition.subtype = kCATransitionFromLeft;//可更改为其他方式
+        transition.duration = 0.5;
+        [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
         
+
         UserCenterController  *userCVC = [[UserCenterController alloc] init];
+        
         [self.navigationController pushViewController:userCVC animated:YES];
         
         
