@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  eCareHG
+//
+//  Created by JinYanFeng on 15/9/16.
+//  Copyright (c) 2015年 JinYanFeng. All rights reserved.
+//
+
+#ifndef eCareHG_PrefixHeader_pch
+#define eCareHG_PrefixHeader_pch
+
+#pragma mark - Jin Yanfeng 的宏 -
+
+#import "Const.h"
+#import "MyTools.h"
+#import "DBNAlertView.h"
+#import "UIColorAdditions.h"
+
+//#import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
+#import "NSDate+Convenience.h"
+
+#import "RoundBtn.h"
+
+
+//#import "AFNetworking.h"
+//#import "RequestConst.h"
+////#import "ServiceTask.h"
+//#import "AFServiceBase.h"
+
+//#import "UserCache.h"
+//#import "PassValueDelegate.h"
+//#import "MJRefresh.h"
+//
+
+//#import "APIKey.h"
+//#import "UIButton+WebCache.h"
+//#import "UIImageView+WebCache.h"
+//
+//
+//#import <MapKit/MapKit.h>
+//#import <MAMapKit/MAMapKit.h>
+#endif
+

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HomePageViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,15 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
+    HomePageViewController *vc =[[HomePageViewController alloc]init];
+    UINavigationController *nav =[[UINavigationController alloc]initWithRootViewController:vc];
+    nav.navigationBarHidden =YES;
+    self.window.rootViewController =nav;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

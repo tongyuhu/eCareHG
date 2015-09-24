@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  222
+//
+//  Created by JinYanFeng on 15/9/21.
+//  Copyright (c) 2015年 JinYanFeng. All rights reserved.
+//
+
+#ifndef _22_PrefixHeader_pch
+#define _22_PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "NSDate+Convenience.h"
+#endif
+
+#define RGBCOLOR(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
+#define RGBACOLOR(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+#define kDarkGrayColor       RGBCOLOR(51, 51, 51)
+#define kGrayColor           RGBCOLOR(153, 153, 153)
+#define kLightGrayColor      RGBCOLOR(185, 185, 185)
