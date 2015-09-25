@@ -43,7 +43,7 @@ typedef enum {
 @property (nonatomic, strong) NSDate *beginDate;
 @property (nonatomic, strong) NSDate *endDate;
 @property (nonatomic, strong) NSMutableArray *dateArr;
-@property (nonatomic, assign) id <CHPassValueDelegate> delegate1;
+@property (nonatomic, assign) id <CHPassValueDelegate> delegate;
 - (id)initWithFrame:(CGRect)frame logic:(KalLogic *)logic delegate:(id<KalViewDelegate>)delegate;
 - (void)markTilesForDates:(NSArray *)dates;
 

@@ -16,7 +16,7 @@
 #define SLIDE_UP 1
 #define SLIDE_DOWN 2
 
-const CGSize kTileSize = { 46.f, 48.f };
+const CGSize kTileSize = { 46.f, 40.f };
 
 static NSString *kSlideAnimationId = @"KalSwitchMonths";
 
@@ -325,13 +325,11 @@ static NSString *kSlideAnimationId = @"KalSwitchMonths";
             }
     }
     for (int i=0; i<self.rangeTiles.count; i++) {
-        KalTileView *tile1 = [self.rangeTiles objectAtIndex:i];
-        
+        KalTileView *tile1 = [self.rangeTiles objectAtIndex:i];        
         [self.dateArr addObject:tile1.date];
     }
-    [self.dateArr sortedArrayUsingSelector:@selector(compare:)];
     NSLog(@"所有的黄标＝＝1111＝＝%@",self.dateArr);
-    [self.delegate1 passValue:self.dateArr];
+    [self.delegate passValue:self.dateArr];
 //    if ([hitView isKindOfClass:[KalTileView class]]) {
 //        KalTileView *tile = (KalTileView*)hitView;
 //        if (tile.type & KalTileTypeDisable)

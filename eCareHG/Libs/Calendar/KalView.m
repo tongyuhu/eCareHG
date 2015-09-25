@@ -16,7 +16,7 @@
 
 @end
 
-static const CGFloat kHeaderHeight = 60.f;
+static const CGFloat kHeaderHeight = 50.f;
 static const CGFloat kMonthLabelHeight = 17.f;
 
 @implementation KalView
@@ -83,7 +83,7 @@ static const CGFloat kMonthLabelHeight = 17.f;
 //    const CGFloat kChangeMonthButtonWidth = 46.0f;
 //    const CGFloat kChangeMonthButtonHeight = 30.0f;
     const CGFloat kMonthLabelWidth = 200.0f;
-    const CGFloat kHeaderVerticalAdjust = 13.f;
+    const CGFloat kHeaderVerticalAdjust = 10.f;
     
     // Create the previous month button on the left side of the view
 //    CGRect previousMonthButtonFrame = CGRectMake(self.left,
@@ -132,10 +132,10 @@ static const CGFloat kMonthLabelHeight = 17.f;
     NSUInteger firstWeekday = [[NSCalendar currentCalendar] firstWeekday];
     NSUInteger i = firstWeekday - 1;
     for (CGFloat xOffset = 0.f; xOffset < headerView.width; xOffset += 46.f, i = (i+1)%7) {
-        CGRect weekdayFrame = CGRectMake(xOffset, 30.f, 46.f, kHeaderHeight - 15.f);
+        CGRect weekdayFrame = CGRectMake(xOffset, 33.f, 46.f, kHeaderHeight - 33.f);
         UILabel *weekdayLabel = [[UILabel alloc] initWithFrame:weekdayFrame];
-        weekdayLabel.backgroundColor = [UIColor clearColor];
-        weekdayLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:10];
+        weekdayLabel.backgroundColor =SPLINELIGHTGRAY;
+        weekdayLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:11];
         weekdayLabel.textAlignment = NSTextAlignmentCenter;
         weekdayLabel.textColor = kGrayColor;
         weekdayLabel.text = [weekdayNames objectAtIndex:i];

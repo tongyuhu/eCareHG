@@ -18,7 +18,14 @@
     NSString *compareTimeStr;
     NSMutableArray *compareTimeArr;
 
+    
+    NSArray *hourArr ;
+    NSArray *minuteArr;
+    
+    NSDateFormatter *dateFormat;
+    UIView *tmpCustomView;
 }
+
 @end
 
 @implementation ServiceTimeViewController
@@ -30,43 +37,96 @@
 //    self.endDate = [NSDate dateStartOfDay:[[NSDate date] offsetDay:1]];
     self.minAvailableDate = [NSDate dateStartOfDay:[[NSDate date] offsetDay:0]];
     self.maxAVailableDate = [self.minAvailableDate offsetDay:30];
+    
     self.navTitle.text = @"服务时间";
     [self initScrollView];
     [self initCustomView];
-    
-    NSArray *hourArr =@[@"00",@"01",@"02",@"03",@"04",@"05",@"06",@"07",@"08",@"09",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24"];
-    NSArray *minuteArr =@[@"00",@"30"];
-    pickArr =[NSMutableArray arrayWithObjects:self.dateArr,hourArr,minuteArr, nil];
-    NSLog(@"所有的黄标＝＝3333＝＝%@",self.dateArr );
+    [self initPickerViewData];
+  
 
-    timeArr =[[NSMutableArray alloc]initWithObjects:@"00",@"00", nil];
-    compareTimeArr =[[NSMutableArray alloc]initWithObjects:@"00",@"00", nil];
-    segmentClick =YES;
-    
-    self.pickerBackView.frame =CGRectMake(0, ScreenHeight -370, ScreenWidth, 0);
-    
-    
 }
+- (void)loadView
+{
+    if (!self.title)
+        self.title = @"Calendar";
+    KalView *kalView = [[KalView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] delegate:self logic:logic];
+    kalView.gridView.selectionMode = *(self.selectionMode);
+    self.view = kalView;
+    kalView.gridView.delegate =self;
+    
+    tableView = kalView.tableView;
+    tableView.dataSource = dataSource;
+    tableView.delegate = delegate;
+    [self reloadData];
+    self.dateArr =@[@""];
+}
+//代理  接收被选择的日期数组
+- (void)passValue:(NSArray*)dateArr
+{
+    self.dateArr =[self arrayWithMemberIsOnly:dateArr];
+    self.dateArr =[self.dateArr sortedArrayUsingSelector:@selector(compare:)];
+    
+    [self.pickerView reloadComponent:0];
+    NSLog(@"所有的黄标＝＝2222＝＝%@",self.dateArr );
+}
+//删除数组中相同的日期
+-(NSArray *)arrayWithMemberIsOnly:(NSArray *)array
+{
+    NSMutableArray *categoryArray = [[NSMutableArray alloc] init];
+    for (unsigned i = 0; i < [array count]; i++){
+        NSDate *date =[array objectAtIndex:i];
+        if ([categoryArray containsObject:date] == NO){
+            [categoryArray addObject:date];
+        }
+        
+    }
+    return categoryArray;
+
+}
+
 - (void)initScrollView
 {
     self.myScrollView.backgroundColor =[UIColor clearColor];
     self.myScrollView.delegate = self;
-    self.myScrollView.contentSize = CGSizeMake(ScreenWidth, 568-368);
+    self.myScrollView.contentSize = CGSizeMake(ScreenWidth, 568-365);
 }
 - (void)initCustomView{
     NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"ServiceTimeCustomView" owner:self options:nil];
     //得到第一个UIView
-    UIView *tmpCustomView = [nib objectAtIndex:0];
+    tmpCustomView = [nib objectAtIndex:0];
     //获得屏幕的Frame
-    tmpCustomView.frame =CGRectMake(0, 365, ScreenWidth, ScreenHeight -365);
+    tmpCustomView.frame =CGRectMake(0, ScreenHeight -200, ScreenWidth, 200);
     //添加视图
     [self.view addSubview:tmpCustomView];
 }
--(void)passValue1:(NSArray*)dateArr
+- (void)initPickerViewData
 {
-    [pickArr replaceObjectAtIndex:0 withObject:dateArr];
-    [self.pickerView reloadComponent:0];
+    hourArr =@[@"00",@"01",@"02",@"03",@"04",@"05",@"06",@"07",@"08",@"09",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",@"21",@"22",@"23",@"24"];
+    minuteArr =@[@"00",@"30"];
+//    pickArr =[NSMutableArray arrayWithObjects:self.dateArr,hourArr,minuteArr, nil];
+    NSLog(@"所有的黄标＝＝3333＝＝%@",self.dateArr );
+    
+    timeArr =[[NSMutableArray alloc]initWithObjects:@"00",@"00", nil];
+    compareTimeArr =[[NSMutableArray alloc]initWithObjects:@"00",@"00", nil];
+    segmentClick =YES;
+    
+    NSString *seletedHour = [[pickArr objectAtIndex:1]objectAtIndex:0];
+    NSString *seletedMinute = [[pickArr objectAtIndex:2]objectAtIndex:0];
+    timeStr =[NSString stringWithFormat:@"  %@:%@",seletedHour,seletedMinute];
+    compareTimeStr =[NSString stringWithFormat:@"%@%@",seletedHour,seletedMinute];
+    
+    self.pickerBackView.frame =CGRectMake(0, tmpCustomView.frame.size.height, ScreenWidth, 0);
+    
+    
+    dateFormat = [[NSDateFormatter alloc] init];
+    dateFormat.dateFormat = @"eeee YYYY-MMMM-dd";
+    [dateFormat setMonthSymbols:[NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6月",@"7",@"8",@"9",@"10",@"11",@"12", nil]];
+    [dateFormat setWeekdaySymbols:[NSArray arrayWithObjects:@"周日",@"周一",@"周二",@"周三",@"周四",@"周五",@"周六", nil]];
+
+
+
 }
+
 #pragma mark 点击全部相同
 -(IBAction)sameBtnClick:(UIButton *)sender{
     sameBtnClick =!sameBtnClick;
@@ -84,7 +144,7 @@
    
     [UIView animateWithDuration:0.5 animations:^{
         [self.myScrollView bringSubviewToFront:self.pickerBackView];
-        self.pickerBackView.frame =CGRectMake(0, ScreenHeight -370-190, ScreenWidth, 185);
+        self.pickerBackView.frame =CGRectMake(0, 0, ScreenWidth, 200);
 
     }];
 
@@ -93,7 +153,7 @@
 #pragma mark UIPickerView 的取消和确定
 - (IBAction)cancelBtnClick:(id)sender{
     [UIView animateWithDuration:0.5 animations:^{
-        self.pickerBackView.frame =CGRectMake(0, ScreenHeight -370, ScreenWidth, 0);
+        self.pickerBackView.frame =CGRectMake(0,tmpCustomView.frame.size.height, ScreenWidth, 0);
         
     }];
     
@@ -114,12 +174,13 @@
 
 
     }
-    if ([[compareTimeArr objectAtIndex:0]intValue]>[[compareTimeArr objectAtIndex:1]intValue]) {
-        MESSAGE(nil, @"开始日期不能晚于结束日期");
+    if ([[compareTimeArr objectAtIndex:0]intValue]>[[compareTimeArr objectAtIndex:1]intValue]||[[compareTimeArr objectAtIndex:0]intValue]==[[compareTimeArr objectAtIndex:1]intValue]) {
+        MESSAGE(nil, @"结束日时间要晚于开始时间");
         return;
     }
+    
     [UIView animateWithDuration:0.5 animations:^{
-        self.pickerBackView.frame =CGRectMake(0, ScreenHeight -370, ScreenWidth, 0);
+        self.pickerBackView.frame =CGRectMake(0, tmpCustomView.frame.size.height, ScreenWidth, 0);
         
     }];
     self.startTimeLab.text =[timeArr objectAtIndex:0];
@@ -158,22 +219,23 @@
 #pragma mark UIPickerView DataSource method
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-    return pickArr.count;
+    return 3;
 }
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-//    if (component ==0)
-//    {
-//        return 2;
-//    }
-//    else if  (component ==1)
-//    {
-//        return 25;
-//    }
-//
+    if (component ==0)
+    {
+        return self.dateArr.count;
+    }
+    else if  (component ==1)
+    {
+        return hourArr.count;
+    }
     
-    return [[pickArr objectAtIndex:component]count];
+    return minuteArr.count;
+
+//    return [[pickArr objectAtIndex:component]count];
     
 }
 #pragma mark UIPickerView  Delegate method
@@ -196,13 +258,22 @@
     if (component == 0) {
         
         myView.frame =CGRectMake(20.0, 0.0, 140, 30);
-        
-    }else{
+        myView.text = [dateFormat stringFromDate:[self.dateArr objectAtIndex:row]];
+    }else if (component == 1){
         myView.frame =CGRectMake(10.0, 0.0, 60, 30);
+        myView.text = [hourArr objectAtIndex:row];
+
 
     }
-    myView.text = [[pickArr objectAtIndex:component]objectAtIndex:row];
+    else if (component == 2){
+        myView.frame =CGRectMake(10.0, 0.0, 60, 30);
+        myView.text = [minuteArr objectAtIndex:row];
+        
+        
+    }
 
+//    myView.text = [[pickArr objectAtIndex:component]objectAtIndex:row];
+//    NSLog(@"-----pickArr--%@",[[pickArr objectAtIndex:0]objectAtIndex:0]);
     return myView;
     
 }
@@ -251,10 +322,10 @@
 //    NSString *seletedDate = [[pickArr objectAtIndex:0]objectAtIndex:selectedDateIndex];
     
     NSInteger selectedHourIndex = [self.pickerView selectedRowInComponent:1];
-    NSString *seletedHour = [[pickArr objectAtIndex:1]objectAtIndex:selectedHourIndex];
+    NSString *seletedHour = [hourArr  objectAtIndex:selectedHourIndex];
     
     NSInteger selectedMinuteIndex = [self.pickerView selectedRowInComponent:2];
-    NSString *seletedMinute = [[pickArr objectAtIndex:2]objectAtIndex:selectedMinuteIndex];
+    NSString *seletedMinute = [minuteArr objectAtIndex:selectedMinuteIndex];
     
     timeStr =[NSString stringWithFormat:@"  %@:%@",seletedHour,seletedMinute];
     compareTimeStr =[NSString stringWithFormat:@"%@%@",seletedHour,seletedMinute];

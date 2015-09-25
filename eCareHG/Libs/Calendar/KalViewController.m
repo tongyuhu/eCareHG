@@ -30,10 +30,6 @@ void mach_absolute_difference(uint64_t end, uint64_t start, struct timespec *tp)
 NSString *const KalDataSourceChangedNotification = @"KalDataSourceChangedNotification";
 
 @interface KalViewController ()
-{
-
-    NSMutableArray *dateMutArr;
-}
 
 - (KalView*)calendarView;
 
@@ -223,48 +219,48 @@ NSString *const KalDataSourceChangedNotification = @"KalDataSourceChangedNotific
 //    self.myScrollView.contentSize = CGSizeMake(ScreenWidth, 568);
 //    [self.view addSubview:self.myScrollView];
 //}
-- (void)loadView
-{
-//    [self initScrollView];
-    if (!self.title)
-        self.title = @"Calendar";
-    KalView *kalView = [[KalView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] delegate:self logic:logic];
-    kalView.gridView.selectionMode = *(self.selectionMode);
-    self.view = kalView;
-    kalView.gridView.delegate1 =self;
-
-//    [self.myScrollView addSubview:kalView];
-    tableView = kalView.tableView;
-    tableView.dataSource = dataSource;
-    tableView.delegate = delegate;
-    [self reloadData];
-    dateMutArr =[[NSMutableArray alloc]initWithObjects:@"0", nil];
-    self.dateArr =@[@""];
-}
-//代理  接收被选择的日期数组
-- (void)passValue:(NSArray*)dateArr
-{
-    self.dateArr =[self arrayWithMemberIsOnly:dateArr];
-    [self.delegate1 passValue1:self.dateArr ];
-    NSLog(@"所有的黄标＝＝2222＝＝%@",self.dateArr );
-
-}
-//删除数组中相同的日期
--(NSArray *)arrayWithMemberIsOnly:(NSArray *)array
-{
-    [dateMutArr removeAllObjects];
-    for (int i =0; i < array.count; i++) {
-        @autoreleasepool {
-            if ([dateMutArr containsObject:[array objectAtIndex:i]] == NO)
-            {
-                [dateMutArr addObject:[array objectAtIndex:i]];
-            }
-
-        }
-    }
-    return dateMutArr;
-
-}
+//- (void)loadView
+//{
+////    [self initScrollView];
+//    if (!self.title)
+//        self.title = @"Calendar";
+//    KalView *kalView = [[KalView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] delegate:self logic:logic];
+//    kalView.gridView.selectionMode = *(self.selectionMode);
+//    self.view = kalView;
+//    kalView.gridView.delegate1 =self;
+//
+////    [self.myScrollView addSubview:kalView];
+//    tableView = kalView.tableView;
+//    tableView.dataSource = dataSource;
+//    tableView.delegate = delegate;
+//    [self reloadData];
+//    self.dateMutArr =[[NSMutableArray alloc]initWithObjects:@"0", nil];
+//    self.dateArr =@[@""];
+//}
+////代理  接收被选择的日期数组
+//- (void)passValue:(NSArray*)dateArr
+//{
+//    self.dateArr =[self arrayWithMemberIsOnly:dateArr];
+//    [self.delegate1 passValue1:self.dateArr ];
+//    NSLog(@"所有的黄标＝＝2222＝＝%@",self.dateArr );
+//
+//}
+////删除数组中相同的日期
+//-(NSArray *)arrayWithMemberIsOnly:(NSArray *)array
+//{
+//    [dateMutArr removeAllObjects];
+//    for (int i =0; i < array.count; i++) {
+//        @autoreleasepool {
+//            if ([dateMutArr containsObject:[array objectAtIndex:i]] == NO)
+//            {
+//                [dateMutArr addObject:[array objectAtIndex:i]];
+//            }
+//
+//        }
+//    }
+//    return dateMutArr;
+//
+//}
 - (void)viewDidUnload
 {
     [super viewDidUnload];

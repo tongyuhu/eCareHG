@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0301E7EF-13F0-44A9-AE85-7FD611CC3007</string>
 	<key>IDESourceControlProjectName</key>
-	<string>eCareHG</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A5580CB5E2D38449D1D79AF8DB161C273F6110F1</key>
 		<string>https://github.com/tongyuhu/eCareHG.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>eCareHG.xcodeproj</string>
+	<string>eCareHG.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A5580CB5E2D38449D1D79AF8DB161C273F6110F1</key>

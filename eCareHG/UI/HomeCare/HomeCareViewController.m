@@ -24,7 +24,8 @@
     
     NSMutableArray *selContentArr;
     NSMutableArray *selArr;
-
+    int lowerPrice;
+    int highPrice;
 
 }
 @end
@@ -38,10 +39,15 @@
     [self initScrollView];
     [self initOriginSelectBtn];
     
-    self.selectBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 350);
+    self.selectBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 335);
     self.selectBackView.hidden =YES;
     selContentArr =[[NSMutableArray alloc]initWithObjects:@"1",@"1",@"1",@"1",@"1", nil];
     selArr =[[NSMutableArray alloc]initWithCapacity:0];
+    self.lowerPriceLab.text =@"不限";
+    self.highPriceLab.text =@"不限";
+    lowerPrice =25;
+    highPrice =40;
+
 }
 -(void)initNavBar
 {
@@ -113,7 +119,7 @@
     
     [UIView animateWithDuration:0.5 animations:^{
         self.selectBackView.hidden =NO;
-        self.selectBackView.frame =CGRectMake(0, ScreenHeight -350-64, ScreenWidth, 350);
+        self.selectBackView.frame =CGRectMake(0, ScreenHeight -335-64, ScreenWidth, 335);
     }];
 
     
@@ -122,7 +128,7 @@
 #pragma mark-取消
 - (IBAction)cancelBtnClick:(id)sender{
     [UIView animateWithDuration:0.5 animations:^{
-        self.selectBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 350);
+        self.selectBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 335);
     } completion:^(BOOL finished) {
         self.selectBackView.hidden =YES;
         
@@ -132,7 +138,7 @@
 #pragma mark-确定
 - (IBAction)sureBtnClick:(id)sender{
     [UIView animateWithDuration:0.5 animations:^{
-        self.selectBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 350);
+        self.selectBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 335);
     } completion:^(BOOL finished) {
         self.selectBackView.hidden =YES;
         
@@ -147,7 +153,8 @@
               }
      }];
     NSString *str =[selArr componentsJoinedByString:@","];
-    self.selectNurseLab.text =str;
+   
+    self.selectNurseLab.text =str.length>1?str:@"未筛选";
 
 
 }
@@ -183,8 +190,43 @@
 
 
 }
+#pragma mark-报价
 - (IBAction)priceBtnClick:(UIButton *)sender{
+    
     [selContentArr replaceObjectAtIndex:2 withObject:@"报价"];
+    
+    if (sender.tag ==30) {
+        if (lowerPrice ==25 ||[self.lowerPriceLab.text isEqualToString:@"不限"]) {
+            self.lowerPriceLab.text =@"不限";
+            self.highPriceLab.text =@"不限";
+            return;
+        }
+        
+        lowerPrice -=20;
+        highPrice -=20;
+        self.lowerPriceLab.text =[NSString stringWithFormat:@"%d",lowerPrice];
+        self.highPriceLab.text =[NSString stringWithFormat:@"%d",highPrice];
+            }
+    else if (sender.tag ==31)
+    {
+        if ([self.lowerPriceLab.text isEqualToString:@"不限"]) {
+            self.lowerPriceLab.text =@"25";
+            self.highPriceLab.text =@"40";
+            
+            return;
+        }
+        if (highPrice ==100) {
+            self.lowerPriceLab.text =@"100";
+            self.highPriceLab.text =@"不限";
+            return;
+            
+        }
+        
+        lowerPrice +=20;
+        highPrice +=20;
+        self.lowerPriceLab.text =[NSString stringWithFormat:@"%d",lowerPrice];
+        self.highPriceLab.text =[NSString stringWithFormat:@"%d",highPrice];
+    }
 
 
 }
@@ -194,7 +236,7 @@
         sender.backgroundColor =PURPLE;
         UIButton *oldBtn =(RoundBtn *)[self.view viewWithTag:titleBtnTag];
         oldBtn.backgroundColor =Color(255, 255, 255);
-        oldBtnTag =sender.tag;
+        titleBtnTag =sender.tag;
     }
     else
         return;
@@ -206,7 +248,7 @@
         sender.backgroundColor =PURPLE;
         UIButton *oldBtn =(RoundBtn *)[self.view viewWithTag:workYearBtnTag];
         oldBtn.backgroundColor =Color(255, 255, 255);
-        oldBtnTag =sender.tag;
+        workYearBtnTag =sender.tag;
     }
     else
         return;

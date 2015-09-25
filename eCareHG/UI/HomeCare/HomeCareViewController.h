@@ -27,6 +27,8 @@
 - (IBAction)sexBtnClick:(id)sender;
 - (IBAction)oldBtnClick:(id)sender;
 - (IBAction)priceBtnClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *lowerPriceLab;
+@property (weak, nonatomic) IBOutlet UILabel *highPriceLab;
 - (IBAction)titleBtnClick:(id)sender;
 - (IBAction)cancelBtnClick:(id)sender;
 - (IBAction)sureBtnClick:(id)sender;

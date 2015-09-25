@@ -27,19 +27,22 @@ extern const CGSize kTileSize;
 
 - (void)drawRect:(CGRect)rect
 {
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
-    CGFloat fontSize = 17;
+//    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGFloat fontSize = 15;
     UIFont *font = [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
     UIColor *textColor = nil;
-    CGContextSelectFont(ctx, [font.fontName cStringUsingEncoding:NSUTF8StringEncoding], fontSize, kCGEncodingMacRoman);
+//    CGContextSelectFont(ctx, [font.fontName cStringUsingEncoding:NSUTF8StringEncoding], fontSize, kCGEncodingMacRoman);
+    
     
     if (self.isDisable) {
         textColor = kGrayColor;
-    } else if (self.belongsToAdjacentMonth) {
-        [RGBCOLOR(240, 240, 240) setFill];
-        CGContextFillRect(ctx, CGRectMake(0.f, 1.f, kTileSize.width, kTileSize.height));
-        textColor = kGrayColor;
-    } else {
+    }
+//    else if (self.belongsToAdjacentMonth) {
+//        [RGBCOLOR(240, 240, 240) setFill];
+//        CGContextFillRect(ctx, CGRectMake(0.f, 1.f, kTileSize.width, kTileSize.height));
+//        textColor = kGrayColor;
+//    }
+    else {
         textColor = PURPLE;
     }
     if (self.isMarked) {

@@ -20,10 +20,6 @@
  *  date is selected (just like in Apple's calendar app).
  *
  */
-@protocol CHPassValueDelegate1 <NSObject>
--(void)passValue1:(NSArray*)dateArr;
-@end
-
 
 @interface KalViewController : BaseNavViewController <KalViewDelegate, KalDataSourceCallbacks,UIScrollViewDelegate,CHPassValueDelegate>
 {
@@ -42,7 +38,6 @@
 @property (nonatomic, strong) NSDate *minAvailableDate;
 @property (nonatomic, strong) NSDate *maxAVailableDate;
 @property (nonatomic, copy) NSArray *dateArr;
-@property (nonatomic, assign) id <CHPassValueDelegate1> delegate1;
 
 //@property (nonatomic, strong) UIScrollView *myScrollView;
 
