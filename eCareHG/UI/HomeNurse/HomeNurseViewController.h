@@ -12,6 +12,7 @@
 @property(nonatomic,weak)IBOutlet UIScrollView *myScrollView;
 @property (weak, nonatomic) IBOutlet UIView *selectBackView;
 @property (weak, nonatomic) IBOutlet UILabel *namelab;
+@property (weak, nonatomic) IBOutlet UITextField *addressTF;
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLab;
 @property (weak, nonatomic) IBOutlet UILabel *finishTimeLab;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 - (IBAction)segmentChange:(id)sender;
 - (IBAction)serviceObjBtnClick:(id)sender;
+- (IBAction)serviceAreaBtnClick:(id)sender;
 
 
 //专户人员筛选View的btn

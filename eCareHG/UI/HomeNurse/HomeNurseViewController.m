@@ -97,6 +97,12 @@
     [self.navigationController pushViewController:serVC animated:YES];
     
 }
+#pragma mark-点击服务区域
+- (IBAction)serviceAreaBtnClick:(id)sender
+{
+
+
+}
 #pragma mark-点击segment
 - (IBAction)segmentChange:(UISegmentedControl *)sender {
     if (sender.selectedSegmentIndex ==0) {
