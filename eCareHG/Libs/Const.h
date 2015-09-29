@@ -32,11 +32,12 @@
 #define PURPLE [UIColor colorWithRed:141.0/255.0 green:102.0/255.0 blue:216.0/255.0 alpha:1.0]
 #define BACKGROUNDCOLOR [UIColor colorWithRed:235.0/255.0 green:236.0/255.0 blue:240.0/255.0 alpha:1.0]
 #define BLACK [UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]
+#define PLACEHODE [UIColor colorWithRed:199.0/255.0 green:199.0/255.0 blue:205.0/255.0 alpha:1.0]
+
 #define TEXTBLACK [UIColor colorWithHexString:@"333333"]
 #define TEXTGRAY [UIColor colorWithHexString:@"999999"]
 #define SPLINEGRAY [UIColor colorWithHexString:@"8b8b8b"]
 #define SPLINELIGHTGRAY [UIColor colorWithHexString:@"eaeaea"]
-
 
 #define RGBCOLOR(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
 #define RGBACOLOR(R,G,B,A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]

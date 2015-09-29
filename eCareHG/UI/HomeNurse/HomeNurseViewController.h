@@ -7,6 +7,7 @@
 //
 
 #import "BaseNavViewController.h"
+#import "ServeContentView.h"
 
 @interface HomeNurseViewController : BaseNavViewController<UIScrollViewDelegate>
 @property(nonatomic,weak)IBOutlet UIScrollView *myScrollView;
@@ -18,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *phoneTF;
 @property (weak, nonatomic) IBOutlet UILabel *selectNurseLab;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
+@property (weak, nonatomic) IBOutlet UITextField *areaTF;
 - (IBAction)segmentChange:(id)sender;
 - (IBAction)serviceObjBtnClick:(id)sender;
 - (IBAction)serviceAreaBtnClick:(id)sender;
@@ -35,5 +37,12 @@
 - (IBAction)titleBtnClick:(id)sender;
 - (IBAction)cancelBtnClick:(id)sender;
 - (IBAction)sureBtnClick:(id)sender;
+
+#pragma mark- pickerView
+@property (weak, nonatomic) IBOutlet UIView *pickerBackView;
+- (IBAction)pickerCancelBtnClick:(id)sender;
+- (IBAction)pickerSureBtnClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+#pragma mark- 服务说明
 
 @end

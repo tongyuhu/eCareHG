@@ -20,7 +20,6 @@
 @end
 
 @implementation AddServiceObjectMesVC
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -28,7 +27,7 @@
     [self initNavBar];
     [self initScrollView];
     
-    self.pickerBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 0);
+    [self initPickerData];
     self.mesView.layer.borderColor = [UIColor grayColor].CGColor;
     self.mesView.layer.borderWidth =1;
     self.mesView.backgroundColor =[UIColor clearColor];
@@ -39,21 +38,7 @@
     serMesObject =[[ServiceObjectMessage alloc]init];
 
     
-    NSArray *ary1 =[NSArray arrayWithObjects:@"浦东新区",@"宝山区",@"闽行区",@"虹口区", nil];
-    cityDic =[NSDictionary dictionaryWithObject:ary1 forKey:@"上海"];
-    keys =[cityDic allKeys];;
-    
-    NSInteger selectedProvinceIndex = [self.pickerView selectedRowInComponent:0];
-    NSString *seletedProvince = [keys objectAtIndex:selectedProvinceIndex];
-    areaArray = [cityDic objectForKey:seletedProvince];
-    
-    NSInteger selectedCityIndex = [self.pickerView selectedRowInComponent:1];
-    NSString *seletedCity = [areaArray objectAtIndex:selectedCityIndex];
-
-    
-    NSString *msg = [NSString stringWithFormat:@"%@%@", seletedProvince,seletedCity];
-    areaStr =msg;
-
+   
 
     
 }
@@ -68,7 +53,7 @@
 #pragma mark 点击导航条右侧的btn(保存)
 -(void)NavRightBtnClicked
 {
-    serMesObject.areaStr =self.areaTF.text;
+    serMesObject.areaStr =self.areaLab.text;
     serMesObject.addressStr =self.addressTF.text;
     serMesObject.nameStr =self.nameTF.text;
     serMesObject.oldStr =self.oldTF.text;
@@ -84,6 +69,28 @@
     self.myScrollView.backgroundColor =[UIColor clearColor];
     self.myScrollView.delegate = self;
     self.myScrollView.contentSize = CGSizeMake(ScreenWidth, 568-64);
+}
+-(void)initPickerData
+{
+    self.pickerBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 0);
+    [self.view addSubview:self.pickerBackView];
+
+    NSArray *ary1 =[NSArray arrayWithObjects:@"浦东新区",@"宝山区",@"闽行区",@"虹口区", nil];
+    cityDic =[NSDictionary dictionaryWithObject:ary1 forKey:@"上海"];
+    keys =[cityDic allKeys];;
+    
+    NSInteger selectedProvinceIndex = [self.pickerView selectedRowInComponent:0];
+    NSString *seletedProvince = [keys objectAtIndex:selectedProvinceIndex];
+    areaArray = [cityDic objectForKey:seletedProvince];
+    
+    NSInteger selectedCityIndex = [self.pickerView selectedRowInComponent:1];
+    NSString *seletedCity = [areaArray objectAtIndex:selectedCityIndex];
+    
+    
+    NSString *msg = [NSString stringWithFormat:@"%@%@", seletedProvince,seletedCity];
+    areaStr =msg;
+
+
 }
 #pragma mark 选择性别
 - (IBAction)manBtnClick:(UIButton *)sender {
@@ -127,14 +134,23 @@
 }
 
 - (IBAction)sureBtnClick:(id)sender {
-    [UIView animateWithDuration:0.5 animations:^{
+       [UIView animateWithDuration:0.5 animations:^{
         self.pickerBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 0);
     } completion:^(BOOL finished) {
 //        self.pickerBackView.hidden =YES;
         
     }];
 
-    self.areaTF.text =areaStr;
+    self.areaLab.text =areaStr;
+    if (![self.areaLab.text isEqualToString:@"请选择区/县"]) {
+        self.areaLab.textColor =BLACK;
+        
+    }
+    else
+    {
+        self.areaLab.textColor =PLACEHODE;
+    }
+
 
 }
 #pragma mark UIPickerView DataSource method
@@ -227,6 +243,16 @@
         areaStr =msg;
     }
 }
+#pragma mark-选择区域btn
+- (IBAction)selAreaBtnClick:(id)sender
+{
+    [UIView animateWithDuration:0.5 animations:^{
+        self.pickerBackView.frame =CGRectMake(0, ScreenHeight -179, ScreenWidth, 179);
+    } completion:^(BOOL finished) {
+        
+    }];
+
+}
 #pragma mark-textFieldMethod
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     return [textField resignFirstResponder];
@@ -235,33 +261,10 @@
     [self.view endEditing:YES];
     
 }
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-    if (textField ==self.areaTF) {
-       [self.areaTF resignFirstResponder];
-
-        [UIView animateWithDuration:0.5 animations:^{
-                self.pickerBackView.frame =CGRectMake(0, ScreenHeight -179-64, ScreenWidth, 179);
-            } completion:^(BOOL finished) {
-//                self.pickerBackView.hidden =NO;
-                
-            }];
-        
-    }
-//    else
-//    {
-//        self.pickerBackView.hidden =YES;
-//    }
-}
 #pragma mark-textViewMethod
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
-//    [UIView animateWithDuration:0.5 animations:^{
-//        self.pickerBackView.frame =CGRectMake(0, ScreenHeight, ScreenWidth, 179);
-//    }];
-    
     self.mesView.layer.borderColor = [UIColor orangeColor].CGColor;
     self.mesView.layer.borderWidth =1;
-//    self.mesTextView.placeholder =nil;
     return YES;
 }
 - (void)didReceiveMemoryWarning {

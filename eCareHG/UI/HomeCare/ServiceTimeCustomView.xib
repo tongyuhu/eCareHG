@@ -5,18 +5,18 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServiceTimeViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KalView">
             <connections>
                 <outlet property="endLab" destination="IjW-jj-hD6" id="1LO-Ay-47V"/>
                 <outlet property="endLineLab" destination="QmT-qu-bO5" id="Kk8-Hs-LTg"/>
                 <outlet property="endTimeLab" destination="zzG-Ry-bmf" id="bh7-HM-dc7"/>
-                <outlet property="myScrollView" destination="P6n-ip-RhU" id="VXc-cB-n5o"/>
                 <outlet property="pickerBackView" destination="uUQ-iI-7lP" id="SRw-zB-YU6"/>
                 <outlet property="pickerView" destination="zYy-Id-z2o" id="h7e-WS-3Uh"/>
                 <outlet property="sameBtn" destination="BOO-dJ-aqW" id="dYY-Mp-hdT"/>
                 <outlet property="startLab" destination="0A1-qH-CE9" id="aFy-02-enL"/>
                 <outlet property="startLineLab" destination="XHd-Bx-nG3" id="2nD-Rj-JrF"/>
                 <outlet property="startTimeLab" destination="xBg-HV-Bkl" id="j7I-mN-DfC"/>
+                <outlet property="tmpCustomView" destination="iN0-l3-epB" id="sI5-ye-VIh"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

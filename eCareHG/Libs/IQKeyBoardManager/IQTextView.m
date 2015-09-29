@@ -74,13 +74,15 @@
     
     if ( placeHolderLabel == nil )
     {
-        placeHolderLabel = [[UILabel alloc] initWithFrame:CGRectInset(self.bounds, 8, 8)];
-        placeHolderLabel.autoresizingMask = (UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight);
-        placeHolderLabel.lineBreakMode = NSLineBreakByWordWrapping;
+//        placeHolderLabel = [[UILabel alloc] initWithFrame:CGRectInset(self.frame, 2, 2)];
+        placeHolderLabel =[[UILabel alloc]init];
+        placeHolderLabel.frame =CGRectMake(2, 2, self.frame.size.width -4, self.frame.size.height -4);
+//                placeHolderLabel.autoresizingMask = (UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight);
+//        placeHolderLabel.lineBreakMode = NSLineBreakByWordWrapping;
         placeHolderLabel.numberOfLines = 0;
-        placeHolderLabel.font = self.font;
+        placeHolderLabel.font =[UIFont systemFontOfSize:13];
         placeHolderLabel.backgroundColor = [UIColor clearColor];
-        placeHolderLabel.textColor = [UIColor colorWithWhite:0.7 alpha:1.0];
+        placeHolderLabel.textColor =PLACEHODE;
         placeHolderLabel.alpha = 0;
         [self addSubview:placeHolderLabel];
     }

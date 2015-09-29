@@ -9,7 +9,7 @@
 #import "KalViewController.h"
 
 @interface ServiceTimeViewController : KalViewController<UIPickerViewDataSource,UIPickerViewDelegate>
-@property(nonatomic,weak)IBOutlet UIScrollView *myScrollView;
+@property(nonatomic,strong) UIScrollView *myScrollView;
 @property(nonatomic,weak)IBOutlet UIButton *sameBtn;
 @property (weak, nonatomic) IBOutlet UILabel *startTimeLab;
 @property (weak, nonatomic) IBOutlet UILabel *endTimeLab;

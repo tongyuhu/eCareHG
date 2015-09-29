@@ -26,6 +26,7 @@
     NSMutableArray *selArr;
     int lowerPrice;
     int highPrice;
+    UIView *tmpCustomView;
 
 }
 @end
@@ -47,14 +48,27 @@
     self.highPriceLab.text =@"不限";
     lowerPrice =25;
     highPrice =40;
-
+    [self initCustomView];
 }
 -(void)initNavBar
 {
     self.navTitle.text =@"居家专护";
     self.rightBtn.hidden =NO;
     [self.rightBtn setTitle:@"服务说明" forState:UIControlStateNormal];
-
+    [self.rightBtn addTarget:self action:@selector(navRightBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+#pragma mark-点击nav右侧的btn服务说明
+-(void)navRightBtnClick
+{
+    
+    [UIView animateWithDuration:0.5 animations:^{
+        tmpCustomView.center =self.view.center;
+        tmpCustomView.bounds =CGRectMake(0,0, 270, 300);
+    } completion:^(BOOL finished) {
+        
+    }];
+    
 }
 - (void)initScrollView
 {
@@ -85,6 +99,15 @@
     workYearBtn.backgroundColor =PURPLE;
 
 
+}
+- (void)initCustomView{
+    tmpCustomView = [[[NSBundle mainBundle] loadNibNamed:@"ServeContentView" owner:self options:nil]lastObject];
+    tmpCustomView.center =self.view.center;
+    tmpCustomView.bounds =CGRectMake(0,0, 0, 0);
+    tmpCustomView.layer.borderColor =PURPLE.CGColor;
+    tmpCustomView.layer.borderWidth =1;
+    [self.view addSubview:tmpCustomView];
+    
 }
 - (IBAction)serviceObjBtnClick:(id)sender
 {
@@ -187,8 +210,6 @@
     else
         return;
 
-
-
 }
 #pragma mark-报价
 - (IBAction)priceBtnClick:(UIButton *)sender{
@@ -255,6 +276,18 @@
 
     
 }
+#pragma mark-点击服务说明view消失
+- (void)dismissBtnClick:(id)sender {
+    [UIView animateWithDuration:0.5 animations:^{
+        tmpCustomView.center =self.view.center;
+        tmpCustomView.bounds =CGRectMake(0,0, 0, 0);
+    } completion:^(BOOL finished) {
+        
+    }];
+    
+    
+}
+
 - (void)textFieldDidEndEditing:(UITextField *)textField{
     if (textField == self.phoneTF) {
         if (![MyTools checkTel:self.phoneTF.text]) {
@@ -280,6 +313,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-
 @end

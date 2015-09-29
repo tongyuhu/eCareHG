@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddServiceObjectMesVC">
             <connections>
                 <outlet property="addressTF" destination="kb7-GV-jry" id="nU3-I2-VCT"/>
-                <outlet property="areaTF" destination="lb2-XO-b0N" id="mbv-Hc-tuY"/>
+                <outlet property="areaLab" destination="HA6-jS-SPZ" id="VYH-3A-TSu"/>
                 <outlet property="fullBtn" destination="ZuR-PU-jxv" id="LEd-Xh-JbT"/>
                 <outlet property="halfFullBtn" destination="rLM-jh-4kz" id="DOx-9L-1FJ"/>
                 <outlet property="ladyBtn" destination="NIi-iu-pSh" id="jxd-q7-u4Q"/>
@@ -52,15 +52,6 @@
                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请选择区/县" minimumFontSize="17" id="lb2-XO-b0N">
-                                    <rect key="frame" x="85" y="6" width="204" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="-1" id="ukx-RL-RMb"/>
-                                    </connections>
-                                </textField>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="righticon.png" id="lTF-gF-Fcs">
                                     <rect key="frame" x="293" y="10" width="22" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -196,7 +187,7 @@
                                             <rect key="frame" x="8" y="4" width="202" height="72"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             <connections>
                                                 <outlet property="delegate" destination="-1" id="rbs-yD-UrY"/>
@@ -282,6 +273,23 @@
                                     <state key="selected" image="xuanzhong.png"/>
                                     <connections>
                                         <action selector="fullBtnClick:" destination="-1" eventType="touchUpInside" id="ZRk-sC-Ewm"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择区/县" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HA6-jS-SPZ">
+                                    <rect key="frame" x="85" y="10" width="208" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.7803921568627451" green="0.7803921568627451" blue="0.80392156862745101" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XEJ-Ih-wUo">
+                                    <rect key="frame" x="83" y="5" width="212" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="selAreaBtnClick:" destination="-1" eventType="touchUpInside" id="XCg-7t-gpN"/>
                                     </connections>
                                 </button>
                             </subviews>

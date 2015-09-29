@@ -10,8 +10,8 @@
 #import "IQTextView.h"
 @interface AddServiceObjectMesVC : BaseNavViewController<UIScrollViewDelegate>
 @property(nonatomic,weak)IBOutlet UIScrollView *myScrollView;
-@property (weak, nonatomic) IBOutlet UITextField *areaTF;
-
+- (IBAction)selAreaBtnClick:(id)sender;
+@property(nonatomic,weak)IBOutlet UILabel *areaLab;
 @property (weak, nonatomic) IBOutlet UITextField *addressTF;
 @property (weak, nonatomic) IBOutlet UITextField *nameTF;
 @property (weak, nonatomic) IBOutlet UITextField *oldTF;
@@ -35,5 +35,6 @@
 - (IBAction)cancelBtnClick:(id)sender;
 - (IBAction)sureBtnClick:(id)sender;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
+
 
 @end

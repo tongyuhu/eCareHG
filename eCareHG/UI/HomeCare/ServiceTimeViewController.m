@@ -24,6 +24,8 @@
     
     NSDateFormatter *dateFormat;
     UIView *tmpCustomView;
+    
+    KalView *kalView;
 }
 
 @end
@@ -39,7 +41,6 @@
     self.maxAVailableDate = [self.minAvailableDate offsetDay:30];
     
     self.navTitle.text = @"服务时间";
-    [self initScrollView];
     [self initCustomView];
     [self initPickerViewData];
   
@@ -49,7 +50,7 @@
 {
     if (!self.title)
         self.title = @"Calendar";
-    KalView *kalView = [[KalView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] delegate:self logic:logic];
+    kalView = [[KalView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight) delegate:self logic:logic];
     kalView.gridView.selectionMode = *(self.selectionMode);
     self.view = kalView;
     kalView.gridView.delegate =self;
@@ -83,21 +84,14 @@
     return categoryArray;
 
 }
-
-- (void)initScrollView
-{
-    self.myScrollView.backgroundColor =[UIColor clearColor];
-    self.myScrollView.delegate = self;
-    self.myScrollView.contentSize = CGSizeMake(ScreenWidth, 568-365);
-}
 - (void)initCustomView{
     NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"ServiceTimeCustomView" owner:self options:nil];
     //得到第一个UIView
     tmpCustomView = [nib objectAtIndex:0];
     //获得屏幕的Frame
-    tmpCustomView.frame =CGRectMake(0, ScreenHeight -200, ScreenWidth, 200);
+    tmpCustomView.frame =CGRectMake(0,365, ScreenWidth, 200);
     //添加视图
-    [self.view addSubview:tmpCustomView];
+    [kalView.myScrollView addSubview:tmpCustomView];
 }
 - (void)initPickerViewData
 {

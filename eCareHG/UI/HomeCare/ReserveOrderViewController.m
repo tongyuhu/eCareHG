@@ -47,7 +47,7 @@
 -(IBAction)headBtnClick:(id)sender
 {
     [UIView animateWithDuration:0.5 animations:^{
-        headTable.frame =CGRectMake(0, 95, ScreenWidth, 200);
+        headTable.frame =CGRectMake(0, 95, ScreenWidth, 180);
 
     }];
 

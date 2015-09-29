@@ -20,16 +20,18 @@ static const CGFloat kHeaderHeight = 50.f;
 static const CGFloat kMonthLabelHeight = 17.f;
 
 @implementation KalView
-//- (void)initScrollView
-//{
-//    self.automaticallyAdjustsScrollViewInsets = NO;
-//    self.myScrollView =[[UIScrollView alloc]init];
-//    self.myScrollView.frame =CGRectMake(0, 64, ScreenWidth, ScreenHeight+20);
-//    self.myScrollView.backgroundColor =[UIColor clearColor];
-//    self.myScrollView.delegate = self;
-//    self.myScrollView.contentSize = CGSizeMake(ScreenWidth, 568);
-//    [];
-//}
+- (void)initScrollView
+{
+    self.myScrollView =[[UIScrollView alloc]init];
+    self.myScrollView.frame =CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+    self.myScrollView.backgroundColor =[UIColor clearColor];
+    self.myScrollView.showsHorizontalScrollIndicator =NO;
+    self.myScrollView.showsVerticalScrollIndicator =NO;
+    self.myScrollView.delegate = self;
+    self.myScrollView.contentSize = CGSizeMake(ScreenWidth, 568);
+    [self addSubview:self.myScrollView];
+    
+}
 
 - (id)initWithFrame:(CGRect)frame delegate:(id<KalViewDelegate>)theDelegate logic:(KalLogic *)theLogic
 {
@@ -40,16 +42,19 @@ static const CGFloat kMonthLabelHeight = 17.f;
         self.autoresizesSubviews = YES;
         self.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         self.backgroundColor = RGBCOLOR(246, 246, 246);
+        [self initScrollView];
         
        UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 64, frame.size.width, kHeaderHeight)];
        headerView.backgroundColor =[UIColor whiteColor];
        [self addSubviewsToHeaderView:headerView];
-        [self addSubview:headerView];
+        [self.myScrollView addSubview:headerView];
         
-        UIView *contentView = [[UIView alloc] initWithFrame:CGRectMake(0.f, kHeaderHeight+64, frame.size.width, frame.size.height - kHeaderHeight -64)];
-        contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-        [self addSubviewsToContentView:contentView];
-        [self addSubview:contentView];
+        self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0.f, kHeaderHeight+64, ScreenWidth, ScreenHeight - kHeaderHeight -64)];
+//        contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+        [self addSubviewsToContentView:self.contentView];
+        [self.myScrollView addSubview:self.contentView];
+        
+//        [self initCustomView];
     }
     
     return self;
@@ -152,8 +157,8 @@ static const CGFloat kMonthLabelHeight = 17.f;
 //    CGRect fullWidthAutomaticLayoutFrame = CGRectMake(0.f,0, self.width, 0.f);
     
     // The tile grid (the calendar body)
-    self.gridView = [[KalGridView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 100) logic:logic delegate:self.delegate];
-    [self.gridView addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:NULL];
+    self.gridView = [[KalGridView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth,264) logic:logic delegate:self.delegate];
+//    [self.gridView addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:NULL];
     [contentView addSubview:self.gridView];
     
     // The list of events for the selected day
@@ -211,6 +216,35 @@ static const CGFloat kMonthLabelHeight = 17.f;
     [logic removeObserver:self forKeyPath:@"selectedMonthNameAndYear"];
     
     [self.gridView removeObserver:self forKeyPath:@"frame"];
+}
+- (void)awakeFromNib
+{
+    [[NSBundle mainBundle] loadNibNamed:@"ServiceTimeCustomView" owner:self options:nil];
+    self.tmpCustomView.frame =CGRectMake(0, ScreenHeight -200, ScreenWidth, 200);
+ 
+    [self.myScrollView addSubview:self.tmpCustomView];
+}
+
+- (void)initCustomView{
+//    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"ServiceTimeCustomView" owner:self options:nil];
+//    //得到第一个UIView
+//     UIView *  tmpCustomView = [nib objectAtIndex:0];
+////    //获得屏幕的Frame
+//     tmpCustomView.frame =CGRectMake(0, ScreenHeight -200, ScreenWidth, 200);
+//    //添加视图
+//    [self addSubview:tmpCustomView];
+////    UIView *tmpCustomView =[[UIView alloc]init];
+////    tmpCustomView.backgroundColor =[UIColor greenColor];
+////     tmpCustomView.frame =CGRectMake(0, ScreenHeight -200, ScreenWidth, 200);
+////    [self.myScrollView addSubview:tmpCustomView];
+//    
+    
+//    [[NSBundle mainBundle] loadNibNamed:@"ServiceTimeCustomView" owner:self options:nil];
+    self.tmpCustomView =[[UIView alloc]init];
+    self.tmpCustomView.frame =CGRectMake(0, ScreenHeight -200, ScreenWidth, 200);
+    self.tmpCustomView.backgroundColor =[UIColor redColor];
+    [self.myScrollView addSubview:self.tmpCustomView];
+
 }
 
 @end

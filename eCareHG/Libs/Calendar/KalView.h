@@ -48,6 +48,8 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) KalGridView *gridView;
 @property (nonatomic, strong)UIScrollView * myScrollView;
+@property (nonatomic, strong) IBOutlet UIView * tmpCustomView;
+@property (nonatomic, strong)UIView *contentView;
 - (id)initWithFrame:(CGRect)frame delegate:(id<KalViewDelegate>)delegate logic:(KalLogic *)logic;
 - (BOOL)isSliding;
 - (void)markTilesForDates:(NSArray *)dates;
