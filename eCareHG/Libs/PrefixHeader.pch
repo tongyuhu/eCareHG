@@ -9,7 +9,14 @@
 #ifndef eCareHG_PrefixHeader_pch
 #define eCareHG_PrefixHeader_pch
 
+
+
+
 #pragma mark - Jin Yanfeng 的宏 -
+
+#define BASEURL @"http://121.40.126.172:8080/servie/"
+
+#pragma mark - 头文件
 
 #import "Const.h"
 #import "MyTools.h"
@@ -21,7 +28,6 @@
 #import "NSDate+Convenience.h"
 
 #import "RoundBtn.h"
-
 
 //#import "AFNetworking.h"
 //#import "RequestConst.h"
@@ -40,5 +46,10 @@
 //
 //#import <MapKit/MapKit.h>
 //#import <MAMapKit/MAMapKit.h>
+
+
+
+
+
 #endif
 

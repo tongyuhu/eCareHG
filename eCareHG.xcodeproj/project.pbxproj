@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D32E3271BC64F0D00455BA5 /* RegisterViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E3251BC64F0D00455BA5 /* RegisterViewController2.m */; };
+		2D32E3281BC64F0D00455BA5 /* RegisterViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D32E3261BC64F0D00455BA5 /* RegisterViewController2.xib */; };
 		2D5AD0CB1BB3E8120078BCD6 /* FamilyArchivesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0B91BB3E8120078BCD6 /* FamilyArchivesViewController.m */; };
 		2D5AD0CC1BB3E8120078BCD6 /* IdentityCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BB1BB3E8120078BCD6 /* IdentityCardViewController.m */; };
 		2D5AD0CD1BB3E8120078BCD6 /* IdentityCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BC1BB3E8120078BCD6 /* IdentityCardViewController.xib */; };
@@ -25,6 +27,8 @@
 		2D5AD0E11BB3F6A50078BCD6 /* ServiceObjectMesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0DD1BB3F6A50078BCD6 /* ServiceObjectMesCell.xib */; };
 		2D5AD0E61BB3FA340078BCD6 /* FamilyMemberMesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0E41BB3FA340078BCD6 /* FamilyMemberMesCell.m */; };
 		2D5AD0E71BB3FA340078BCD6 /* FamilyMemberMesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0E51BB3FA340078BCD6 /* FamilyMemberMesCell.xib */; };
+		2DE41BAE1BC648AB00E2226A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE41BAC1BC648AB00E2226A /* RegisterViewController.m */; };
+		2DE41BAF1BC648AB00E2226A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE41BAD1BC648AB00E2226A /* RegisterViewController.xib */; };
 		8655B14B1BAFC80500FE2A96 /* NSDate+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 8655B1351BAFC80500FE2A96 /* NSDate+Convenience.m */; };
 		8655B14C1BAFC80500FE2A96 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8655B1371BAFC80500FE2A96 /* NSDateAdditions.m */; };
 		8655B14D1BAFC80500FE2A96 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8655B1391BAFC80500FE2A96 /* UIViewAdditions.m */; };
@@ -187,6 +191,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D32E3241BC64F0D00455BA5 /* RegisterViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController2.h; sourceTree = "<group>"; };
+		2D32E3251BC64F0D00455BA5 /* RegisterViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController2.m; sourceTree = "<group>"; };
+		2D32E3261BC64F0D00455BA5 /* RegisterViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController2.xib; sourceTree = "<group>"; };
 		2D5AD0B81BB3E8120078BCD6 /* FamilyArchivesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyArchivesViewController.h; sourceTree = "<group>"; };
 		2D5AD0B91BB3E8120078BCD6 /* FamilyArchivesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyArchivesViewController.m; sourceTree = "<group>"; };
 		2D5AD0BA1BB3E8120078BCD6 /* IdentityCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentityCardViewController.h; sourceTree = "<group>"; };
@@ -215,6 +222,9 @@
 		2D5AD0E31BB3FA340078BCD6 /* FamilyMemberMesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyMemberMesCell.h; sourceTree = "<group>"; };
 		2D5AD0E41BB3FA340078BCD6 /* FamilyMemberMesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyMemberMesCell.m; sourceTree = "<group>"; };
 		2D5AD0E51BB3FA340078BCD6 /* FamilyMemberMesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamilyMemberMesCell.xib; sourceTree = "<group>"; };
+		2DE41BAB1BC648AB00E2226A /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		2DE41BAC1BC648AB00E2226A /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		2DE41BAD1BC648AB00E2226A /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		8655B1331BAFC80500FE2A96 /* NSDate+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Convenience.h"; sourceTree = "<group>"; };
 		8655B1341BAFC80500FE2A96 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		8655B1351BAFC80500FE2A96 /* NSDate+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Convenience.m"; sourceTree = "<group>"; };
@@ -452,6 +462,12 @@
 				2D5AD0C01BB3E8120078BCD6 /* SignViewController.h */,
 				2D5AD0C11BB3E8120078BCD6 /* SignViewController.m */,
 				2D5AD0C21BB3E8120078BCD6 /* SignViewController.xib */,
+				2DE41BAB1BC648AB00E2226A /* RegisterViewController.h */,
+				2DE41BAC1BC648AB00E2226A /* RegisterViewController.m */,
+				2DE41BAD1BC648AB00E2226A /* RegisterViewController.xib */,
+				2D32E3241BC64F0D00455BA5 /* RegisterViewController2.h */,
+				2D32E3251BC64F0D00455BA5 /* RegisterViewController2.m */,
+				2D32E3261BC64F0D00455BA5 /* RegisterViewController2.xib */,
 				2D5AD0C31BB3E8120078BCD6 /* UserCenterController.h */,
 				2D5AD0C41BB3E8120078BCD6 /* UserCenterController.m */,
 				2D5AD0C51BB3E8120078BCD6 /* UserCenterView.h */,
@@ -959,6 +975,7 @@
 				867121F01BA9483800D94CF1 /* jujia_icon.png in Resources */,
 				867121D91BA9483800D94CF1 /* choose.png in Resources */,
 				8655B1551BAFC80500FE2A96 /* Kal.bundle in Resources */,
+				2DE41BAF1BC648AB00E2226A /* RegisterViewController.xib in Resources */,
 				867121F71BA9483800D94CF1 /* map_searchicon.png in Resources */,
 				867121EA1BA9483800D94CF1 /* huisejiantou.png in Resources */,
 				867121F31BA9483800D94CF1 /* lightning_icon.png in Resources */,
@@ -989,6 +1006,7 @@
 				2D5AD0CF1BB3E8120078BCD6 /* SettingViewController.xib in Resources */,
 				8671212E1BA945C400D94CF1 /* LaunchScreen.xib in Resources */,
 				867122131BA9483800D94CF1 /* usertouxiang.png in Resources */,
+				2D32E3281BC64F0D00455BA5 /* RegisterViewController2.xib in Resources */,
 				867121C81BA9483800D94CF1 /* adressjiantou_idon.png in Resources */,
 				867121F81BA9483800D94CF1 /* mark.png in Resources */,
 				867122071BA9483800D94CF1 /* querenxiadan.png in Resources */,
@@ -1058,6 +1076,7 @@
 				8655B1541BAFC80500FE2A96 /* KalViewController.m in Sources */,
 				8655B15D1BAFCC6400FE2A96 /* EventKitDataSource.m in Sources */,
 				2D5AD0D21BB3E8120078BCD6 /* UserCenterController.m in Sources */,
+				2D32E3271BC64F0D00455BA5 /* RegisterViewController2.m in Sources */,
 				2D5AD0D01BB3E8120078BCD6 /* SignViewController.m in Sources */,
 				8655B1521BAFC80500FE2A96 /* KalTileView.m in Sources */,
 				8671235D1BA9686400D94CF1 /* IQTitleBarButtonItem.m in Sources */,
@@ -1085,6 +1104,7 @@
 				2D5AD0D51BB3E8120078BCD6 /* UserInformationViewController.m in Sources */,
 				8671235E1BA9686400D94CF1 /* IQToolbar.m in Sources */,
 				867121201BA945C400D94CF1 /* main.m in Sources */,
+				2DE41BAE1BC648AB00E2226A /* RegisterViewController.m in Sources */,
 				865F2CD01BAA76DA00D7A1E2 /* MBProgressHUD.m in Sources */,
 				8688A41D1BABE9AD00F38B55 /* UIColorAdditions.m in Sources */,
 				8655B1661BAFDCA700FE2A96 /* ReserveOrderViewController.m in Sources */,
@@ -1165,7 +1185,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Lu (6GN4YEA6Y5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bo Lu (6GN4YEA6Y5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1208,7 +1229,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Bo Lu (6GN4YEA6Y5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bo Lu (6GN4YEA6Y5)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;

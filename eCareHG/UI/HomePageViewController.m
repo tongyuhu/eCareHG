@@ -70,7 +70,7 @@
 #pragma mark - 点击用户中心
 - (void)userCenterBtn
 {
-    BOOL isLogin = YES;
+    BOOL isLogin = NO;
     if (isLogin) {
         //左侧视图模式
         //        CGRect frame = _userView.frame;

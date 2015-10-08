@@ -7,7 +7,7 @@
 //
 
 #import "SignViewController.h"
-
+#import "RegisterViewController.h"
 @interface SignViewController ()
 
 @end
@@ -41,7 +41,8 @@
 #pragma mark - 注册跳转
 - (void)signUp
 {
-    
+    RegisterViewController  *registerVC = [[RegisterViewController alloc] init];
+    [self.navigationController pushViewController:registerVC animated:YES];
 }
 
 @end

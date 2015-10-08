@@ -16,7 +16,7 @@
     [ self.layer setMasksToBounds:YES];
     self.backgroundColor= [UIColor whiteColor];
     self.layer.borderColor = [UIColor lightGrayColor].CGColor;
-    self.layer.borderWidth =0.5;
+//    self.layer.borderWidth =0.5;
 
 //    if (self.selected) {
 //        self.backgroundColor =PURPLE;
