@@ -10,6 +10,9 @@
 		2D32E3271BC64F0D00455BA5 /* RegisterViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E3251BC64F0D00455BA5 /* RegisterViewController2.m */; };
 		2D32E3281BC64F0D00455BA5 /* RegisterViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D32E3261BC64F0D00455BA5 /* RegisterViewController2.xib */; };
 		2D59DC5E1BC755BC0073BB4E /* CareCategaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D59DC5D1BC755BC0073BB4E /* CareCategaryViewController.m */; };
+		2D59DC611BC7727D0073BB4E /* ChatRoomListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D59DC601BC7727D0073BB4E /* ChatRoomListViewController.m */; };
+		2D59DC651BC776A30073BB4E /* ChatRoomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D59DC631BC776A30073BB4E /* ChatRoomTableViewCell.m */; };
+		2D59DC661BC776A30073BB4E /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D59DC641BC776A30073BB4E /* ChatRoomTableViewCell.xib */; };
 		2D5AD0CB1BB3E8120078BCD6 /* FamilyArchivesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0B91BB3E8120078BCD6 /* FamilyArchivesViewController.m */; };
 		2D5AD0CC1BB3E8120078BCD6 /* IdentityCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BB1BB3E8120078BCD6 /* IdentityCardViewController.m */; };
 		2D5AD0CD1BB3E8120078BCD6 /* IdentityCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BC1BB3E8120078BCD6 /* IdentityCardViewController.xib */; };
@@ -31,7 +34,6 @@
 		2DE41BAE1BC648AB00E2226A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE41BAC1BC648AB00E2226A /* RegisterViewController.m */; };
 		2DE41BAF1BC648AB00E2226A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE41BAD1BC648AB00E2226A /* RegisterViewController.xib */; };
 		864C84E31BC7643F0077149E /* AFServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84E21BC7643F0077149E /* AFServiceBase.m */; };
-		864C84E61BC764520077149E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84E51BC764520077149E /* Reachability.m */; };
 		864C85001BC7645F0077149E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84E91BC7645F0077149E /* AFHTTPRequestOperation.m */; };
 		864C85011BC7645F0077149E /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84EB1BC7645F0077149E /* AFHTTPRequestOperationManager.m */; };
 		864C85021BC7645F0077149E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84ED1BC7645F0077149E /* AFHTTPSessionManager.m */; };
@@ -210,6 +212,11 @@
 		2D32E3261BC64F0D00455BA5 /* RegisterViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController2.xib; sourceTree = "<group>"; };
 		2D59DC5C1BC755BC0073BB4E /* CareCategaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CareCategaryViewController.h; path = eCareHG/UI/UserCenter/CareCategaryViewController.h; sourceTree = SOURCE_ROOT; };
 		2D59DC5D1BC755BC0073BB4E /* CareCategaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CareCategaryViewController.m; path = eCareHG/UI/UserCenter/CareCategaryViewController.m; sourceTree = SOURCE_ROOT; };
+		2D59DC5F1BC7727D0073BB4E /* ChatRoomListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatRoomListViewController.h; path = eCareHG/UI/UserCenter/ChatRoomListViewController.h; sourceTree = SOURCE_ROOT; };
+		2D59DC601BC7727D0073BB4E /* ChatRoomListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatRoomListViewController.m; path = eCareHG/UI/UserCenter/ChatRoomListViewController.m; sourceTree = SOURCE_ROOT; };
+		2D59DC621BC776A30073BB4E /* ChatRoomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatRoomTableViewCell.h; path = eCareHG/UI/UserCenter/ChatRoomTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		2D59DC631BC776A30073BB4E /* ChatRoomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatRoomTableViewCell.m; path = eCareHG/UI/UserCenter/ChatRoomTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		2D59DC641BC776A30073BB4E /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChatRoomTableViewCell.xib; path = eCareHG/UI/UserCenter/ChatRoomTableViewCell.xib; sourceTree = SOURCE_ROOT; };
 		2D5AD0B81BB3E8120078BCD6 /* FamilyArchivesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyArchivesViewController.h; sourceTree = "<group>"; };
 		2D5AD0B91BB3E8120078BCD6 /* FamilyArchivesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyArchivesViewController.m; sourceTree = "<group>"; };
 		2D5AD0BA1BB3E8120078BCD6 /* IdentityCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentityCardViewController.h; sourceTree = "<group>"; };
@@ -243,8 +250,6 @@
 		2DE41BAD1BC648AB00E2226A /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		864C84E11BC7643F0077149E /* AFServiceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFServiceBase.h; sourceTree = "<group>"; };
 		864C84E21BC7643F0077149E /* AFServiceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFServiceBase.m; sourceTree = "<group>"; };
-		864C84E41BC764520077149E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		864C84E51BC764520077149E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		864C84E81BC7645F0077149E /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		864C84E91BC7645F0077149E /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		864C84EA1BC7645F0077149E /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -719,8 +724,6 @@
 			isa = PBXGroup;
 			children = (
 				864C84E71BC7645F0077149E /* AFNetworking */,
-				864C84E41BC764520077149E /* Reachability.h */,
-				864C84E51BC764520077149E /* Reachability.m */,
 				8655B1321BAFC7FB00FE2A96 /* Calendar */,
 				8688A41A1BABE9A100F38B55 /* TextColorConvert */,
 				867123421BA9686400D94CF1 /* IQKeyBoardManager */,
@@ -750,6 +753,11 @@
 			children = (
 				2D59DC5C1BC755BC0073BB4E /* CareCategaryViewController.h */,
 				2D59DC5D1BC755BC0073BB4E /* CareCategaryViewController.m */,
+				2D59DC5F1BC7727D0073BB4E /* ChatRoomListViewController.h */,
+				2D59DC601BC7727D0073BB4E /* ChatRoomListViewController.m */,
+				2D59DC621BC776A30073BB4E /* ChatRoomTableViewCell.h */,
+				2D59DC631BC776A30073BB4E /* ChatRoomTableViewCell.m */,
+				2D59DC641BC776A30073BB4E /* ChatRoomTableViewCell.xib */,
 			);
 			path = ChatRoom;
 			sourceTree = "<group>";
@@ -1028,6 +1036,7 @@
 				8671221A1BA9483800D94CF1 /* yonghu_icon.png in Resources */,
 				867121E81BA9483800D94CF1 /* green_bnt.png in Resources */,
 				867121291BA945C400D94CF1 /* Main.storyboard in Resources */,
+				2D59DC661BC776A30073BB4E /* ChatRoomTableViewCell.xib in Resources */,
 				866514131BB38B16004D4FE1 /* FamilyMemberMesViewController.xib in Resources */,
 				867121F51BA9483800D94CF1 /* locaicon.png in Resources */,
 				867122031BA9483800D94CF1 /* popup1.png in Resources */,
@@ -1159,6 +1168,7 @@
 				8655B15D1BAFCC6400FE2A96 /* EventKitDataSource.m in Sources */,
 				2D5AD0D21BB3E8120078BCD6 /* UserCenterController.m in Sources */,
 				2D32E3271BC64F0D00455BA5 /* RegisterViewController2.m in Sources */,
+				2D59DC611BC7727D0073BB4E /* ChatRoomListViewController.m in Sources */,
 				864C85031BC7645F0077149E /* AFNetworkReachabilityManager.m in Sources */,
 				2D5AD0D01BB3E8120078BCD6 /* SignViewController.m in Sources */,
 				8655B1521BAFC80500FE2A96 /* KalTileView.m in Sources */,
@@ -1166,7 +1176,6 @@
 				864C85001BC7645F0077149E /* AFHTTPRequestOperation.m in Sources */,
 				8655B1511BAFC80500FE2A96 /* KalMonthView.m in Sources */,
 				8671235A1BA9686400D94CF1 /* IQKeyboardManager.m in Sources */,
-				864C84E61BC764520077149E /* Reachability.m in Sources */,
 				864C85091BC7645F0077149E /* CHCarInfo.m in Sources */,
 				864C85011BC7645F0077149E /* AFHTTPRequestOperationManager.m in Sources */,
 				8671235C1BA9686400D94CF1 /* IQTextView.m in Sources */,
@@ -1212,6 +1221,7 @@
 				867123361BA9511D00D94CF1 /* ServiceObjectMessageVC.m in Sources */,
 				866514121BB38B16004D4FE1 /* FamilyMemberMesViewController.m in Sources */,
 				8655B1611BAFDA5600FE2A96 /* ServiceTimeViewController.m in Sources */,
+				2D59DC651BC776A30073BB4E /* ChatRoomTableViewCell.m in Sources */,
 				2D5AD0DE1BB3F6A50078BCD6 /* OrderNurseCell.m in Sources */,
 				867A4C2C1BB3C05B00F63A7B /* AddFamilyMemberMesVC.m in Sources */,
 				864C85061BC7645F0077149E /* AFURLRequestSerialization.m in Sources */,
