@@ -2,8 +2,8 @@
 //  AFServiceBase.h
 //  ChuangHe_IOS
 //
-//  Created by 郑贵明 on 14-11-14.
-//  Copyright (c) 2014年 上海创和汽车服务股份有限公司. All rights reserved.
+//  Created by jinyanfeng on 14-11-15.
+//  Copyright (c) 2015年 上海创和汽车服务股份有限公司. All rights reserved.
 //
 
 //#import <Foundation/Foundation.h>

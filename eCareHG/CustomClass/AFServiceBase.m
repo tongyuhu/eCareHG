@@ -2,8 +2,8 @@
 //  AFServiceBase.m
 //  ChuangHe_IOS
 //
-//  Created by 郑贵明 on 14-11-14.
-//  Copyright (c) 2014年 上海创和汽车服务股份有限公司. All rights reserved.
+//  Created by jinyanfeng on 14-11-15.
+//  Copyright (c) 2015年 上海创和汽车服务股份有限公司. All rights reserved.
 
 //#define HOST_REQUEST_ADDRESS @"http://192.168.0.210:90/v2/app/carpark/person_v2/"  //测试接口
 #define HOST_REQUEST_ADDRESS @"http://app2.1jia2.cn/carpark/person_v2/"   //正式接口
