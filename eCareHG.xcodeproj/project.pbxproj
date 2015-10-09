@@ -31,7 +31,6 @@
 		2DE41BAE1BC648AB00E2226A /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE41BAC1BC648AB00E2226A /* RegisterViewController.m */; };
 		2DE41BAF1BC648AB00E2226A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE41BAD1BC648AB00E2226A /* RegisterViewController.xib */; };
 		864C84E31BC7643F0077149E /* AFServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84E21BC7643F0077149E /* AFServiceBase.m */; };
-		864C84E61BC764520077149E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84E51BC764520077149E /* Reachability.m */; };
 		864C85001BC7645F0077149E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84E91BC7645F0077149E /* AFHTTPRequestOperation.m */; };
 		864C85011BC7645F0077149E /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84EB1BC7645F0077149E /* AFHTTPRequestOperationManager.m */; };
 		864C85021BC7645F0077149E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 864C84ED1BC7645F0077149E /* AFHTTPSessionManager.m */; };
@@ -243,8 +242,6 @@
 		2DE41BAD1BC648AB00E2226A /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		864C84E11BC7643F0077149E /* AFServiceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFServiceBase.h; sourceTree = "<group>"; };
 		864C84E21BC7643F0077149E /* AFServiceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFServiceBase.m; sourceTree = "<group>"; };
-		864C84E41BC764520077149E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		864C84E51BC764520077149E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		864C84E81BC7645F0077149E /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		864C84E91BC7645F0077149E /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		864C84EA1BC7645F0077149E /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -719,8 +716,6 @@
 			isa = PBXGroup;
 			children = (
 				864C84E71BC7645F0077149E /* AFNetworking */,
-				864C84E41BC764520077149E /* Reachability.h */,
-				864C84E51BC764520077149E /* Reachability.m */,
 				8655B1321BAFC7FB00FE2A96 /* Calendar */,
 				8688A41A1BABE9A100F38B55 /* TextColorConvert */,
 				867123421BA9686400D94CF1 /* IQKeyBoardManager */,
@@ -1166,7 +1161,6 @@
 				864C85001BC7645F0077149E /* AFHTTPRequestOperation.m in Sources */,
 				8655B1511BAFC80500FE2A96 /* KalMonthView.m in Sources */,
 				8671235A1BA9686400D94CF1 /* IQKeyboardManager.m in Sources */,
-				864C84E61BC764520077149E /* Reachability.m in Sources */,
 				864C85091BC7645F0077149E /* CHCarInfo.m in Sources */,
 				864C85011BC7645F0077149E /* AFHTTPRequestOperationManager.m in Sources */,
 				8671235C1BA9686400D94CF1 /* IQTextView.m in Sources */,
