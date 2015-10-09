@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D32E3271BC64F0D00455BA5 /* RegisterViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D32E3251BC64F0D00455BA5 /* RegisterViewController2.m */; };
 		2D32E3281BC64F0D00455BA5 /* RegisterViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D32E3261BC64F0D00455BA5 /* RegisterViewController2.xib */; };
+		2D59DC5E1BC755BC0073BB4E /* CareCategaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D59DC5D1BC755BC0073BB4E /* CareCategaryViewController.m */; };
 		2D5AD0CB1BB3E8120078BCD6 /* FamilyArchivesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0B91BB3E8120078BCD6 /* FamilyArchivesViewController.m */; };
 		2D5AD0CC1BB3E8120078BCD6 /* IdentityCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BB1BB3E8120078BCD6 /* IdentityCardViewController.m */; };
 		2D5AD0CD1BB3E8120078BCD6 /* IdentityCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D5AD0BC1BB3E8120078BCD6 /* IdentityCardViewController.xib */; };
@@ -194,6 +195,8 @@
 		2D32E3241BC64F0D00455BA5 /* RegisterViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController2.h; sourceTree = "<group>"; };
 		2D32E3251BC64F0D00455BA5 /* RegisterViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController2.m; sourceTree = "<group>"; };
 		2D32E3261BC64F0D00455BA5 /* RegisterViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController2.xib; sourceTree = "<group>"; };
+		2D59DC5C1BC755BC0073BB4E /* CareCategaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CareCategaryViewController.h; path = eCareHG/UI/UserCenter/CareCategaryViewController.h; sourceTree = SOURCE_ROOT; };
+		2D59DC5D1BC755BC0073BB4E /* CareCategaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CareCategaryViewController.m; path = eCareHG/UI/UserCenter/CareCategaryViewController.m; sourceTree = SOURCE_ROOT; };
 		2D5AD0B81BB3E8120078BCD6 /* FamilyArchivesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamilyArchivesViewController.h; sourceTree = "<group>"; };
 		2D5AD0B91BB3E8120078BCD6 /* FamilyArchivesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamilyArchivesViewController.m; sourceTree = "<group>"; };
 		2D5AD0BA1BB3E8120078BCD6 /* IdentityCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentityCardViewController.h; sourceTree = "<group>"; };
@@ -668,6 +671,8 @@
 		867121611BA9481300D94CF1 /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
+				2D59DC5C1BC755BC0073BB4E /* CareCategaryViewController.h */,
+				2D59DC5D1BC755BC0073BB4E /* CareCategaryViewController.m */,
 			);
 			path = ChatRoom;
 			sourceTree = "<group>";
@@ -1097,6 +1102,7 @@
 				867121231BA945C400D94CF1 /* AppDelegate.m in Sources */,
 				2D5AD0CC1BB3E8120078BCD6 /* IdentityCardViewController.m in Sources */,
 				8655B14F1BAFC80500FE2A96 /* KalGridView.m in Sources */,
+				2D59DC5E1BC755BC0073BB4E /* CareCategaryViewController.m in Sources */,
 				8671232C1BA94E8A00D94CF1 /* HomePageViewController.m in Sources */,
 				8655B14B1BAFC80500FE2A96 /* NSDate+Convenience.m in Sources */,
 				867417BB1BBA62F90074DABC /* ServeContentView.m in Sources */,
