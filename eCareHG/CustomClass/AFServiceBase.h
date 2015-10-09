@@ -16,7 +16,7 @@
 
 - (void)RequestDataParameters:(NSDictionary *)parameters URLstr:(NSString *)url Method:(NSString *)postorget  target:(id)target successBlock:(void(^)(NSDictionary * dic))success failure:(void(^)(NSError * error))failure;
 
-//删除图片
-- (void)RequestDataParameters:(NSDictionary *)parameters URLstr:(NSString *)url tag:(long)tag Method:(NSString *)postorget  target:(id)target successBlock:(void(^)(NSDictionary * dic))success failure:(void(^)(NSError * error))failure;
+////删除图片
+//- (void)RequestDataParameters:(NSDictionary *)parameters URLstr:(NSString *)url tag:(long)tag Method:(NSString *)postorget  target:(id)target successBlock:(void(^)(NSDictionary * dic))success failure:(void(^)(NSError * error))failure;
 
 @end

@@ -48,31 +48,31 @@
         }
     }];
 }
-- (void)RequestDataParameters:(NSDictionary *)parameters URLstr:(NSString *)url tag:(long)tag Method:(NSString *)postorget  target:(id)target successBlock:(void(^)(NSDictionary * dic))success failure:(void(^)(NSError * error))failure{
-    NSString *postUrl = [NSString stringWithFormat:@"%@%@",HOST_REQUEST_ADDRESS,url];
-    NSMutableURLRequest *request =[[AFHTTPRequestSerializer serializer] requestWithMethod:postorget URLString:postUrl parameters:parameters error:nil];
-    [request setValue:@"1409110378" forHTTPHeaderField:@"key"];
-    [request setValue:@"beb78f46b0de7e1c9cc9849294eda43f" forHTTPHeaderField:@"token"];
-    request.timeoutInterval = 30;
-    AFHTTPRequestOperation*  httpRequestoperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
-    httpRequestoperation.shouldUseCredentialStorage = YES;
-    httpRequestoperation.securityPolicy  = [AFSecurityPolicy defaultPolicy];
-    [httpRequestoperation start];
-    
-    [httpRequestoperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        if (success) {
-            NSDictionary * requestdataDic=[NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
-            NSMutableDictionary *dic = [[NSMutableDictionary alloc]initWithDictionary:requestdataDic];
-            [dic setValue:[NSString stringWithFormat:@"%ld",tag] forKey:@"tag"];
-            NSLog(@"============ %@",operation.responseString);
-            success(dic);
-        }
-        
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        if (failure) {
-            failure(error);
-        }
-    }];
-
-}
+//- (void)RequestDataParameters:(NSDictionary *)parameters URLstr:(NSString *)url tag:(long)tag Method:(NSString *)postorget  target:(id)target successBlock:(void(^)(NSDictionary * dic))success failure:(void(^)(NSError * error))failure{
+//    NSString *postUrl = [NSString stringWithFormat:@"%@%@",HOST_REQUEST_ADDRESS,url];
+//    NSMutableURLRequest *request =[[AFHTTPRequestSerializer serializer] requestWithMethod:postorget URLString:postUrl parameters:parameters error:nil];
+//    [request setValue:@"1409110378" forHTTPHeaderField:@"key"];
+//    [request setValue:@"beb78f46b0de7e1c9cc9849294eda43f" forHTTPHeaderField:@"token"];
+//    request.timeoutInterval = 30;
+//    AFHTTPRequestOperation*  httpRequestoperation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+//    httpRequestoperation.shouldUseCredentialStorage = YES;
+//    httpRequestoperation.securityPolicy  = [AFSecurityPolicy defaultPolicy];
+//    [httpRequestoperation start];
+//    
+//    [httpRequestoperation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        if (success) {
+//            NSDictionary * requestdataDic=[NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+//            NSMutableDictionary *dic = [[NSMutableDictionary alloc]initWithDictionary:requestdataDic];
+//            [dic setValue:[NSString stringWithFormat:@"%ld",tag] forKey:@"tag"];
+//            NSLog(@"============ %@",operation.responseString);
+//            success(dic);
+//        }
+//        
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        if (failure) {
+//            failure(error);
+//        }
+//    }];
+//
+//}
 @end
